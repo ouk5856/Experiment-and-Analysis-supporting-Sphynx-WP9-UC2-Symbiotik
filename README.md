@@ -30,3 +30,9 @@ Contains analysis scripts, result files, and two summary documents:
 - **`results/`** — Canonical CSV outputs and reports referenced by the documents above.
 
 The analysis flow is: behavioural analysis → multimodal ISC across conditions → image feature extraction → cross-comparison of features with human data (behaviour and sensors).
+
+---
+
+## Tools & Authorship
+
+Analysis scripts were created using [Cursor](https://www.cursor.com/) and curated by the author. Report and documentation files were also organised and improved in clarity with Cursor assistance, then reviewed and curated manually.
