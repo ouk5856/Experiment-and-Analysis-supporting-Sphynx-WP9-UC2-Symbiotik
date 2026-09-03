@@ -1,0 +1,46 @@
+MULTIMODAL ISC — CORRECTED STATS
+==================================================
+
+Signals: gx_isc, gy_isc, pupil_isc, eda_isc, ppg_isc
+Permutations: 5000
+
+ISC LEVELS BY ADAPTATION (mean LOO r)
+  gx_isc:
+    non_adapted     r=0.229 n=13
+    semi_adapted    r=0.193 n=13
+    fully_adapted   r=-0.044 n=13
+  gy_isc:
+    non_adapted     r=0.732 n=13
+    semi_adapted    r=0.526 n=13
+    fully_adapted   r=0.558 n=13
+  pupil_isc:
+    non_adapted     r=0.545 n=13
+    semi_adapted    r=0.554 n=13
+    fully_adapted   r=0.620 n=13
+  eda_isc:
+    non_adapted     r=0.416 n=11
+    semi_adapted    r=0.516 n=11
+    fully_adapted   r=0.006 n=11
+  ppg_isc:
+    non_adapted     r=0.166 n=11
+    semi_adapted    r=0.110 n=11
+    fully_adapted   r=0.110 n=11
+
+CONTRASTS — raw p_perm < .05
+  gy_isc adaptation non_adapted vs semi_adapted: r=0.732 vs 0.526 p_perm=0.0016 p_wilcoxon=0.001709
+  gx_isc adaptation non_adapted vs fully_adapted: r=0.229 vs -0.044 p_perm=0.0018 p_wilcoxon=0.001709
+  eda_isc adaptation non_adapted vs fully_adapted: r=0.416 vs 0.006 p_perm=0.002999 p_wilcoxon=0.00293
+  gy_isc adaptation non_adapted vs fully_adapted: r=0.732 vs 0.558 p_perm=0.003799 p_wilcoxon=0.003418
+  gy_isc graph_nodes 6 vs 12: r=0.607 vs 0.753 p_perm=0.0158 p_wilcoxon=0.02148
+  eda_isc graph_nodes 6 vs 12: r=-0.160 vs 0.522 p_perm=0.03379 p_wilcoxon=0.01953
+  eda_isc adaptation semi_adapted vs fully_adapted: r=0.516 vs 0.006 p_perm=0.04059 p_wilcoxon=0.04199
+
+CONTRASTS — FDR within factor
+  gx_isc adaptation non_adapted vs fully_adapted: p_fdr=0.0135
+  gy_isc adaptation non_adapted vs semi_adapted: p_fdr=0.0135
+  gy_isc adaptation non_adapted vs fully_adapted: p_fdr=0.01425
+  eda_isc adaptation non_adapted vs fully_adapted: p_fdr=0.01425
+
+COMPARISON TO V1 RAW WILCOXON
+- V1 had no correction; check whether raw-significant v1 contrasts survive FDR/permutation
+- Gaze Y and EDA were the strongest v1 multimodal signals

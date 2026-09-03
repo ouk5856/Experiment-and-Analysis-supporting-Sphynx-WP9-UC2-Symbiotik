@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2024.1.0">
+  <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="2" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="float" valType="str" updates="None" name="clockFormat"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
+    <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="Practice Trials - SYMBIOTIK graphs_2023" valType="str" updates="None" name="expName"/>
+    <Param val="" valType="str" updates="None" name="expVersion"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
+    <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="True" valType="bool" updates="None" name="plCompanionRecordingEnabled"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="1" valType="code" updates="None" name="runMode"/>
+    <Param val="False" valType="bool" updates="None" name="rush"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="start">
+      <RoutineSettingsComponent name="start" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="start" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_6" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_6" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="In the following task, you will have to read a short question and answer that question based on the information provided in a CTI style security graph.&amp;#10;&amp;#10;The graph will display information such as node name, type, tlp level, connection type and other. &amp;#10;&amp;#10;&amp;#10;When the question appears, read carefully as we have a set limited time to read them. Then, view the graph and  answer each question. You also have limited viewing and answering time, but not answering is preferable to random answers. Please ask the researcher is something is not clear before the experiment, as the experiment cannot be paused. &amp;#10;&amp;#10;There are 60 questions in total (and there is a 4 second break after each questions) and the answers will be always numerical that it is, pressing keys from [0-9]. In case you do not know the answer, press the key N.&amp;#10;&amp;#10;To start the experiment press &lt;space&gt;." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_start_experiment_2" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_start_experiment_2" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_4" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import * as pyxid2 from 'pyxid2';&amp;#10;import * as sys from 'sys';&amp;#10;import * as socket from 'socket';&amp;#10;import {sleep, time} from 'time';&amp;#10;HOST = &quot;127.0.0.1&quot;;&amp;#10;PORT = 15361;&amp;#10;DELAY = 0;&amp;#10;flag_connect_EEG = 1;&amp;#10;if (flag_connect_EEG) {&amp;#10;    devices = pyxid2.get_xid_devices();&amp;#10;    dev = devices[0];&amp;#10;    console.log(dev);&amp;#10;    dev.reset_base_timer();&amp;#10;    dev.reset_rt_timer();&amp;#10;    dev.set_pulse_duration(300);&amp;#10;}&amp;#10;console.log(&quot;Beginning of experiment&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    dev.activate_line({&quot;bitmask&quot;: 1});&amp;#10;}&amp;#10;flag_connect_fNIRS = 0;&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    import * as requests from 'requests';&amp;#10;    IP = &quot;http://192.168.137.1:8888&quot;;&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${1}`));&amp;#10;}&amp;#10;flag_connect_eye = 1;&amp;#10;if (flag_connect_eye) {&amp;#10;    HOST1 = &quot;127.0.0.1&quot;;&amp;#10;    PORT1 = 4242;&amp;#10;    ADDRESS1 = [HOST1, PORT1];&amp;#10;    s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM);&amp;#10;    s1.connect(ADDRESS1);&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;starttimeseries\&quot; /&gt;\r\n&quot;));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import pyxid2&amp;#10;import sys&amp;#10;import socket&amp;#10;from time import time, sleep&amp;#10;#import os&amp;#10;#from psychopy import event, visual, core&amp;#10;&amp;#10;# host and port of tcp tagging server&amp;#10;HOST = '127.0.0.1'&amp;#10;PORT = 15361&amp;#10;#PORT = 51234&amp;#10;&amp;#10;# Artificial delay (ms). It may need to be increased if the time to send the tag is too long and causes tag loss.&amp;#10;DELAY=0&amp;#10;&amp;#10;## connect EEG (bitbrain)&amp;#10;flag_connect_EEG = 1&amp;#10;#if flag_connect_EEG:&amp;#10;#    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)&amp;#10;#    s.connect((HOST, PORT))&amp;#10;#    print(s)&amp;#10;## eeg brainvision&amp;#10;if flag_connect_EEG:&amp;#10;    devices = pyxid2.get_xid_devices()&amp;#10;&amp;#10;    dev = devices[0] # get the first device to use&amp;#10;    print(dev)&amp;#10;    dev.reset_base_timer()&amp;#10;    dev.reset_rt_timer()&amp;#10;&amp;#10;    dev.set_pulse_duration(300)&amp;#10;&amp;#10;&amp;#10;print('Beginning of experiment')&amp;#10;if flag_connect_EEG: &amp;#10;    dev.activate_line(bitmask=1)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 1, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;&amp;#10;flag_connect_fNIRS = 0&amp;#10;if flag_connect_fNIRS:   &amp;#10;    import requests&amp;#10;    #IP = 'http://127.0.0.1:8888'&amp;#10;    #IP = 'http://79.152.44.165:8888'&amp;#10;    IP = 'http://192.168.137.1:8888'&amp;#10;&amp;#10;if flag_connect_fNIRS:&amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 1)&amp;#10;&amp;#10;&amp;#10;&amp;#10;flag_connect_eye = 1&amp;#10;if flag_connect_eye:   &amp;#10;    # Host machine IP&amp;#10;    HOST1 = '127.0.0.1'&amp;#10;     # Gazepoint Port&amp;#10;    PORT1 = 4242&amp;#10;    ADDRESS1 = (HOST1, PORT1)&amp;#10;     # Connect to Gazepoint API&amp;#10;    s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)&amp;#10;    s1.connect(ADDRESS1)&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;starttimeseries&quot; /&gt;\r\n'))&amp;#10;    &amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_4" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="show_cross">
+      <RoutineSettingsComponent name="show_cross" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="show_cross" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="txt_show_cross" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="txt_show_cross" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="code_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import * as random from 'random';&amp;#10;x = Math.random.uniform(0.5, 1);&amp;#10;console.log(&quot;=================================&quot;);&amp;#10;k_trial = (currentLoop.thisTrialN + 1);&amp;#10;N_trials = currentLoop.nTotal;&amp;#10;console.log(`Trial: ${k_trial}/${N_trials}`);&amp;#10;if ((k_trial === 122)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;console.log(&quot;Show cross: on&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    message = [0, 0, 0, 0, 0, 0, 0, 0, 2, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];&amp;#10;    s.sendall(bytearray(message));&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${2}`));&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;crosstimeseries\&quot; /&gt;\r\n&quot;));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import random &amp;#10;&amp;#10;x= random.uniform(0.5,1)&amp;#10;&amp;#10;print('=================================')&amp;#10;&amp;#10;k_trial = currentLoop.thisTrialN+1&amp;#10;N_trials = currentLoop.nTotal&amp;#10;print('Trial: %d/%d' % (k_trial,N_trials))&amp;#10;&amp;#10;if k_trial == 122:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;print('Show cross: on')&amp;#10;if flag_connect_EEG: &amp;#10;    dev.activate_line(bitmask=2)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 2, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;    &amp;#10;if flag_connect_fNIRS:     &amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 2)&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;crosstimeseries&quot; /&gt;\r\n'))&amp;#10;    &amp;#10;   " valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="console.log(&quot;Show cross: off&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="print('Show cross: off')" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="instructions">
+      <RoutineSettingsComponent name="instructions" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="instructions" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_3" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import * as random from 'random';&amp;#10;x = Math.random.uniform(1, 2);&amp;#10;console.log(&quot;=================================&quot;);&amp;#10;k_trial = (currentLoop.thisTrialN + 1);&amp;#10;N_trials = currentLoop.nTotal;&amp;#10;console.log(`Trial: ${k_trial}/${N_trials}`);&amp;#10;console.log(&quot;Instructions&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    dev.activate_line({&quot;bitmask&quot;: 3});&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${3}`));&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;instructions\&quot; /&gt;\r\n&quot;));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import random &amp;#10;&amp;#10;x= random.uniform(1,2)&amp;#10;&amp;#10;print('=================================')&amp;#10;k_trial = currentLoop.thisTrialN+1&amp;#10;N_trials = currentLoop.nTotal&amp;#10;print('Trial: %d/%d' % (k_trial,N_trials))&amp;#10;&amp;#10;&amp;#10;print('Instructions')&amp;#10;if flag_connect_EEG: &amp;#10;    dev.activate_line(bitmask=3)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 3, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;    &amp;#10;if flag_connect_fNIRS:     &amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 3)&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;instructions&quot; /&gt;\r\n'))&amp;#10;    " valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_3" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="text_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.06" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$update_questions" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_3" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Once you understand the question, press space to continue" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_2" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <ImageComponent name="legend_instructions" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="cti_experiment_legend_2x2_compact_no_titles.png" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="legend_instructions" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="( 0,-0.325)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.445, 0.325)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="trial">
+      <RoutineSettingsComponent name="trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_start" plugin="None">
+        <Param val="i=0" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="i = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import * as random from 'random';&amp;#10;x = Math.random.uniform(0.5, 1);&amp;#10;if ((k_trial === 121)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;console.log(&quot;Show cross: on&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    dev.activate_line({&quot;bitmask&quot;: 4});&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${2}`));&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    command = `&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;${graph_image} ${graph_complexity} ${question_complexity} ${question_id}&quot; /&gt;&amp;#10;`;&amp;#10;    s1.send(str.encode(command));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import random &amp;#10;&amp;#10;x= random.uniform(0.5,1)&amp;#10;&amp;#10;if k_trial == 121:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;print('Show cross: on')&amp;#10;if flag_connect_EEG:  &amp;#10;    dev.activate_line(bitmask=4)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 4, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;    &amp;#10;if flag_connect_fNIRS:     &amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 2)&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    command = f'&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;{graph_image} {graph_complexity} {question_complexity} {question_id}&quot; /&gt;\r\n'&amp;#10;    s1.send(str.encode(command))&amp;#10;    #s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;crosstimeseries&quot; /&gt;\r\n'))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="console.log(&quot;Responded&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    dev.activate_line({&quot;bitmask&quot;: 5});&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    command = `&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;Finish trial&quot; /&gt;&amp;#10;`;&amp;#10;    s1.send(str.encode(command));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="print('Responded')&amp;#10;if flag_connect_EEG:&amp;#10;    dev.activate_line(bitmask=5)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 5, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    command = f'&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;Finish trial&quot; /&gt;\r\n'&amp;#10;    s1.send(str.encode(command))&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_start" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <ImageComponent name="image" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$graph_image" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="image" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="18" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ImageComponent>
+      <KeyboardComponent name="keypress" plugin="None">
+        <Param val="('0','1','2','3','4','5','6','7','8','9','n','N')" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="keypress" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="18" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <ImageComponent name="legend" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="cti_experiment_legend_2x2_compact_no_titles.png" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="legend" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.695, 0.37)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.395, 0.275)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="15" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="break_2">
+      <RoutineSettingsComponent name="break_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="break_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_4" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_4" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Take a short 4 second break" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_5" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_5" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.40)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$&quot;Number of blocks completed = &quot;&amp;#10;+str(blocks_completed)&amp;#10;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_5" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="blocks_completed = 1" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="blocks_completed = 1;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="blocks_completed += 1;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="blocks_completed += 1" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_5" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="end">
+      <RoutineSettingsComponent name="end" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="end" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="End of experiment&amp;#10;&amp;#10;Thank you&amp;#10;for your participation!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="console.log(&quot;End of experiment&quot;);&amp;#10;if (flag_connect_EEG) {&amp;#10;    dev.activate_line({&quot;bitmask&quot;: 6});&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${5}`));&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;endtimeseries\&quot; /&gt;\r\n&quot;));&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;\&quot; /&gt;\r\n&quot;));&amp;#10;}&amp;#10;if (flag_connect_fNIRS) {&amp;#10;    r = requests.post((IP + `/toggleMarker?id=${1}`));&amp;#10;}&amp;#10;flag_connect_eye = 0;&amp;#10;if (flag_connect_eye) {&amp;#10;    HOST1 = &quot;127.0.0.1&quot;;&amp;#10;    PORT1 = 4242;&amp;#10;    ADDRESS1 = [HOST1, PORT1];&amp;#10;    s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM);&amp;#10;    s1.connect(ADDRESS1);&amp;#10;}&amp;#10;if (flag_connect_eye) {&amp;#10;    s1.send(str.encode(&quot;&lt;SET ID=\&quot;USER_DATA\&quot; VALUE=\&quot;starttimeseries\&quot; /&gt;\r\n&quot;));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="print('End of experiment')&amp;#10;&amp;#10;if flag_connect_EEG: &amp;#10;    dev.activate_line(bitmask=6)&amp;#10;#    message = [0, 0, 0, 0, 0, 0, 0, 0, 6, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]&amp;#10;#    s.sendall(bytearray(message))&amp;#10;    &amp;#10;if flag_connect_fNIRS:&amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 5)&amp;#10;&amp;#10;if flag_connect_eye:&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;endtimeseries&quot; /&gt;\r\n'))&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;&quot; /&gt;\r\n'))&amp;#10;    &amp;#10;&amp;#10;if flag_connect_fNIRS:&amp;#10;    r = requests.post(IP + '/toggleMarker?id=%s' % 1)&amp;#10;&amp;#10;&amp;#10;&amp;#10;flag_connect_eye = 0&amp;#10;if flag_connect_eye:   &amp;#10;    # Host machine IP&amp;#10;    HOST1 = '127.0.0.1'&amp;#10;     # Gazepoint Port&amp;#10;    PORT1 = 4242&amp;#10;    ADDRESS1 = (HOST1, PORT1)&amp;#10;     # Connect to Gazepoint API&amp;#10;    s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)&amp;#10;    s1.connect(ADDRESS1)&amp;#10;    &amp;#10;if flag_connect_eye:&amp;#10;    s1.send(str.encode('&lt;SET ID=&quot;USER_DATA&quot; VALUE=&quot;starttimeseries&quot; /&gt;\r\n'))&amp;#10;    &amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="long_break">
+      <RoutineSettingsComponent name="long_break" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="long_break" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_countdown" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_countdown" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="180" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$'Take a 3 minute break.\n\nCountdown: ' + str(180 - int(t))" valType="str" updates="set every frame" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="code_6" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="trial_num=0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="trial_num = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="trial_num = (trials.thisN + 1);&amp;#10;if (((trial_num % 25) !== 0)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="trial_num = trials.thisN + 1&amp;#10;if trial_num % 25 != 0:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_6" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="start"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00002/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 5.0), ('question_id', 1)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00005/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 3.0), ('question_id', 2)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00008/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 3)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00014/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 4)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00017/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 1.0), ('question_id', 5)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00020/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 2.0), ('question_id', 6)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00023/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 7)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00026/no_caption/non_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 8)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00065/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 2.0), ('question_id', 9)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00068/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 5.0), ('question_id', 10)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00071/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 11)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00074/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 12)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00077/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 0.0), ('question_id', 13)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00080/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 1.0), ('question_id', 14)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00083/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 15)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00086/no_caption/fully_adapted.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 16)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00125/no_caption/nodes_shape_tlp.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'shape_nodes'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 2.0), ('question_id', 17)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00128/no_caption/nodes_color_type.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'color_nodes'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 1.0), ('question_id', 18)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00131/no_caption/nodes_size_value.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'size_nodes'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 19)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00134/no_caption/edge_width_connection_number.png'), ('graph_complexity', 6), ('question_complexity', 1), ('visualisation_type', 'edge_width'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 20)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00137/no_caption/nodes_shape_tlp.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'shape_nodes'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 2.0), ('question_id', 21)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00140/no_caption/nodes_color_type.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'color_nodes'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 0.0), ('question_id', 22)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00143/no_caption/nodes_size_value.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'size_nodes'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 23)]), OrderedDict([('graph_image', 'samples/6 node/6_nodes_S00146/no_caption/edge_width_connection_number.png'), ('graph_complexity', 6), ('question_complexity', 2), ('visualisation_type', 'edge_width'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 24)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00003/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 4.0), ('question_id', 25)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00006/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 1.0), ('question_id', 26)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00009/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 27)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00012/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'non_adapted'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 28)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00015/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 2.0), ('question_id', 29)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00018/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 3.0), ('question_id', 30)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00024/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 31)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00027/no_caption/non_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'non_adapted'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 32)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00072/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 3.0), ('question_id', 33)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00075/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 4.0), ('question_id', 34)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00081/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 35)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00084/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'fully_adapted'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 36)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00087/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 3.0), ('question_id', 37)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00090/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 1.0), ('question_id', 38)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00093/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 39)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00096/no_caption/fully_adapted.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'fully_adapted'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 40)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00135/no_caption/nodes_shape_tlp.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'shape_nodes'), ('update_questions', 'How many CYBER OBSERVABLE nodes are in the graph?'), ('answer', 4.0), ('question_id', 41)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00138/no_caption/nodes_color_type.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'color_nodes'), ('update_questions', 'How many nodes have TLP:GREEN?'), ('answer', 4.0), ('question_id', 42)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00141/no_caption/nodes_size_value.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'size_nodes'), ('update_questions', 'Count the number of nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 43)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00144/no_caption/edge_width_connection_number.png'), ('graph_complexity', 12), ('question_complexity', 1), ('visualisation_type', 'edge_width'), ('update_questions', 'How many low confidence (confidence 1-3) edges exist in the graph?'), ('answer', None), ('question_id', 44)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00147/no_caption/nodes_shape_tlp.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'shape_nodes'), ('update_questions', 'Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).'), ('answer', 2.0), ('question_id', 45)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00150/no_caption/nodes_color_type.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'color_nodes'), ('update_questions', 'Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).'), ('answer', 6.0), ('question_id', 46)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00153/no_caption/nodes_size_value.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'size_nodes'), ('update_questions', 'Count the number of MALWARE nodes with high connection counts (node size 7-10)'), ('answer', None), ('question_id', 47)]), OrderedDict([('graph_image', 'samples/12 node/12_nodes_S00156/no_caption/edge_width_connection_number.png'), ('graph_complexity', 12), ('question_complexity', 2), ('visualisation_type', 'edge_width'), ('update_questions', 'Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).'), ('answer', None), ('question_id', 48)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="psychopy_experiment_stimuli_update_3_visual_changes_have_to_fix_incorrect_image_assignement.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="5" valType="code"/>
+    </LoopInitiator>
+    <Routine name="instructions"/>
+    <Routine name="show_cross"/>
+    <Routine name="trial"/>
+    <Routine name="break_2"/>
+    <Routine name="long_break"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>

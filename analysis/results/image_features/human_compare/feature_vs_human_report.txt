@@ -1,0 +1,81 @@
+POST_ANALYSIS — IMAGE FEATURES vs HUMAN DATA (Sphynx-13)
+N participants = 13, N stimuli = 48. Spearman. FDR-BH within each outcome.
+
+WHY THIS SCRIPT EXISTS
+Behaviour already showed that full adaptation helps (faster, more accurate).
+Script 03 only showed that some image statistics differ by condition label.
+That can be true even if the feature has nothing to do with human load.
+Here: do feature values (and non−full deltas) track RT / accuracy / ET / ISC?
+
+Three questions:
+  1. Stimulus-level: on images with feature X, are people slower / less accurate?
+  2. Residual: after removing adaptation + nodes + question, does X still track RT?
+     If no, X is mostly restating the design. If yes, X captures extra image difficulty.
+  3. Paired benefit: for the same question, does a bigger feature change (non vs full)
+     go with a bigger RT/accuracy benefit?
+
+Stimuli joined: 48  |  median RT 8.48s  |  mean accuracy 0.763
+
+══ 1. STIMULUS-LEVEL (raw Spearman, FDR within outcome) ══
+This still confounds design: 12-node images have both more ink and slower RT.
+
+  low_level    data_utility             vs et_mean_saccade_mag           r=-0.734  p_raw=2.95e-09  p_fdr=9.73e-08  n=48
+  sum          saliency_spread          vs et_mean_saccade_mag           r=+0.612  p_raw=3.84e-06  p_fdr=6.33e-05  n=48
+  sum          saliency_entropy         vs et_mean_saccade_mag           r=+0.536  p_raw=8.68e-05  p_fdr=0.000955  n=48
+  clipgaze     fixation_count           vs accuracy                      r=-0.560  p_raw=3.55e-05  p_fdr=0.00117  n=48
+  low_level    effectiveness            vs et_mean_saccade_mag           r=-0.509  p_raw=0.000219  p_fdr=0.00144  n=48
+  sum          saliency_center_bias     vs et_mean_saccade_mag           r=+0.512  p_raw=0.000198  p_fdr=0.00144  n=48
+  low_level    mark_density             vs et_n_fixations                r=+0.519  p_raw=0.000158  p_fdr=0.0026  n=48
+  low_level    digital_ink              vs et_n_fixations                r=-0.519  p_raw=0.000158  p_fdr=0.0026  n=48
+  clipgaze     fixation_count           vs rt_median                     r=+0.507  p_raw=0.000239  p_fdr=0.00789  n=48
+  clipgaze     saliency_spread          vs et_mean_saccade_mag           r=+0.447  p_raw=0.00145  p_fdr=0.008  n=48
+  clipgaze     info_processing_idx      vs rt_median                     r=-0.459  p_raw=0.00104  p_fdr=0.0133  n=48
+  clipgaze     saliency_spread          vs rt_median                     r=-0.453  p_raw=0.00121  p_fdr=0.0133  n=48
+  clipgaze     fixation_count           vs response_rate                 r=-0.484  p_raw=0.000497  p_fdr=0.0164  n=48
+  clipgaze     mean_saccade_mag         vs rt_median                     r=-0.433  p_raw=0.00214  p_fdr=0.0176  n=48
+  clipgaze     fixation_duration_std    vs accuracy                      r=+0.451  p_raw=0.00128  p_fdr=0.0211  n=48
+  clipgaze     saliency_center_bias     vs et_mean_saccade_mag           r=+0.399  p_raw=0.00501  p_fdr=0.0236  n=48
+  sum          saliency_center_bias     vs rt_median                     r=-0.406  p_raw=0.00416  p_fdr=0.0275  n=48
+  sum          saliency_mean            vs rt_median                     r=-0.387  p_raw=0.00662  p_fdr=0.0364  n=48
+  low_level    digital_ink              vs et_mean_fix_dur               r=+0.430  p_raw=0.0023  p_fdr=0.0379  n=48
+  low_level    mark_density             vs et_mean_fix_dur               r=-0.430  p_raw=0.0023  p_fdr=0.0379  n=48
+  sum          saliency_spread          vs rt_median                     r=-0.367  p_raw=0.0103  p_fdr=0.0484  n=48
+  low_level    data_utility             vs rt_median                     r=+0.355  p_raw=0.0133  p_fdr=0.0488  n=48
+  sum          saliency_entropy         vs rt_median                     r=-0.359  p_raw=0.0123  p_fdr=0.0488  n=48
+
+══ 2. RESIDUAL (design partialled out: adaptation + 6/12 + Q1/Q2) ══
+This is the test of whether the feature is more than a condition-label echo.
+
+  clipgaze     scanpath_length          vs accuracy                      r=-0.451  p_raw=0.00128  p_fdr=0.014  n=48
+  clipgaze     scanpath_complexity      vs accuracy                      r=-0.457  p_raw=0.00108  p_fdr=0.014  n=48
+  clipgaze     cognitive_load           vs accuracy                      r=-0.464  p_raw=0.000885  p_fdr=0.014  n=48
+  sum          saliency_std             vs et_mean_saccade_mag           r=-0.432  p_raw=0.00215  p_fdr=0.0193  n=48
+  sum          saliency_mean            vs et_mean_saccade_mag           r=-0.435  p_raw=0.00199  p_fdr=0.0193  n=48
+  sum          saliency_skewness        vs et_mean_saccade_mag           r=+0.429  p_raw=0.00234  p_fdr=0.0193  n=48
+  sum          saliency_kurtosis        vs et_mean_saccade_mag           r=+0.432  p_raw=0.00216  p_fdr=0.0193  n=48
+  low_level    effectiveness            vs et_mean_saccade_mag           r=+0.419  p_raw=0.00306  p_fdr=0.0202  n=48
+  low_level    mark_density             vs et_mean_saccade_mag           r=+0.386  p_raw=0.00677  p_fdr=0.0319  n=48
+  low_level    digital_ink              vs et_mean_saccade_mag           r=-0.386  p_raw=0.00677  p_fdr=0.0319  n=48
+
+══ 3. PAIRED NON vs FULL (same question + node count; FDR within outcome) ══
+delta = non − full. Positive RT delta = adaptation made people faster.
+
+  sum          saliency_mean            vs delta_et_mean_saccade_mag     r=-0.841  p_raw=4.44e-05  p_fdr=0.00138  n=16
+  sum          saliency_skewness        vs delta_et_mean_saccade_mag     r=+0.812  p_raw=0.000134  p_fdr=0.00208  n=16
+  sum          saliency_kurtosis        vs delta_et_mean_saccade_mag     r=+0.759  p_raw=0.000654  p_fdr=0.00676  n=16
+  sum          saliency_std             vs delta_et_mean_saccade_mag     r=-0.659  p_raw=0.00551  p_fdr=0.0427  n=16
+
+══ CLIPGAZE vs HUMAN EYE-TRACKING ══
+
+  none
+
+══ ADAPTATION-MEAN ALIGNMENT (N=3 levels; descriptive only) ══
+Spearman of (non, semi, full) means. Do not treat p-values as confirmatory.
+  no |r|=1 alignments
+
+HOW TO READ THIS
+A useful adaptation-engine feature should (a) survive FDR in the paired test or
+the residual test, not only the raw stimulus correlation, and (b) move in the
+same direction as the human benefit (more marks / flatter saliency → faster RT).
+CLIPGaze vs human ET tests whether predicted scanpaths resemble real looking.
+

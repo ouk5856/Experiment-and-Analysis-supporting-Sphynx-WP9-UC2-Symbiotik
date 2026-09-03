@@ -1,0 +1,127 @@
+POST_ANALYSIS — FEATURES ACROSS CONDITIONS
+N stimuli = 48 catalog rows. Exploratory Mann–Whitney / Kruskal.
+This stage does NOT compare to human RT / accuracy / ISC (see 04).
+Question: do image features differentiate adaptation / graph size / question level?
+
+Correction:
+  FDR-BH and Bonferroni within each factor family (adaptation / graph_nodes /
+  question_level), and again across all eligible tests (global).
+  Near-constant features (e.g. max-normalized saliency_max ≈ 1) are excluded
+  from correction families and from significance counts.
+  Primary corrected claim = FDR-BH within factor (sig_fdr_factor).
+
+Tests run: 228  |  eligible (not near-constant): 192  |  near-constant excluded: 36
+Uncorrected p_raw<.05: 27  |  FDR-factor: 11  |  FDR-global: 12  |  Bonferroni-factor: 11  |  Bonferroni-global: 11
+
+══ UNCORRECTED (p_raw < .05, near-constant dropped) ══
+
+── clipgaze ──
+  fixation_count           question_level   Q1_vs_Q2                                 p_raw=1.32e-06  p_raw=1.32e-06  mean_a=3.958 mean_b=5.458
+  mean_saccade_mag         question_level   Q1_vs_Q2                                 p_raw=2.06e-05  p_raw=2.06e-05  mean_a=55.51 mean_b=35.51
+  info_processing_idx      question_level   Q1_vs_Q2                                 p_raw=2.26e-05  p_raw=2.26e-05  mean_a=0.0005137 mean_b=0.0002911
+  saliency_spread          question_level   Q1_vs_Q2                                 p_raw=0.00012  p_raw=0.00012  mean_a=251.1 mean_b=224.5
+  saliency_entropy         question_level   Q1_vs_Q2                                 p_raw=0.0154  p_raw=0.0154  mean_a=18.29 mean_b=18.17
+  fixation_duration_std    question_level   Q1_vs_Q2                                 p_raw=0.0182  p_raw=0.0182  mean_a=29.68 mean_b=26.98
+  saliency_center_bias     question_level   Q1_vs_Q2                                 p_raw=0.0266  p_raw=0.0266  mean_a=0.2345 mean_b=0.2132
+  saliency_mean            question_level   Q1_vs_Q2                                 p_raw=0.0281  p_raw=0.0281  mean_a=0.03369 mean_b=0.03055
+  scanpath_complexity      question_level   Q1_vs_Q2                                 p_raw=0.0402  p_raw=0.0402  mean_a=1.112 mean_b=1.677
+  saliency_std             question_level   Q1_vs_Q2                                 p_raw=0.0444  p_raw=0.0444  mean_a=0.1228 mean_b=0.1143
+
+── low_level ──
+  data_utility             graph_nodes      6_vs_12                                  p_raw=7.71e-12  p_raw=7.71e-12  mean_a=13 mean_b=25
+  effectiveness            graph_nodes      6_vs_12                                  p_raw=3.06e-09  p_raw=3.06e-09  mean_a=0.01708 mean_b=0.03292
+  digital_ink              graph_nodes      6_vs_12                                  p_raw=2.26e-05  p_raw=2.26e-05  mean_a=761.3 mean_b=759.5
+  digital_ink              adaptation       non_adapted_vs_fully_adapted             p_raw=0.000238  p_raw=0.000238  mean_a=761 mean_b=759.4
+  digital_ink              adaptation       omnibus_non_semi_full                    p_raw=0.00115  p_raw=0.00115  means non=761 semi=760.8 full=759.4
+  digital_ink              adaptation       semi_adapted_vs_fully_adapted            p_raw=0.00881  p_raw=0.00881  mean_a=760.8 mean_b=759.4
+  effectiveness            adaptation       non_adapted_vs_fully_adapted             p_raw=0.0302  p_raw=0.0302  mean_a=0.02498 mean_b=0.02503
+
+── sum ──
+  saliency_spread          graph_nodes      6_vs_12                                  p_raw=4.93e-08  p_raw=4.93e-08  mean_a=67.67 mean_b=57.14
+  saliency_center_bias     graph_nodes      6_vs_12                                  p_raw=2.01e-06  p_raw=2.01e-06  mean_a=0.357 mean_b=0.3082
+  saliency_entropy         graph_nodes      6_vs_12                                  p_raw=3.32e-06  p_raw=3.32e-06  mean_a=14.49 mean_b=14.24
+  saliency_mean            adaptation       non_adapted_vs_fully_adapted             p_raw=0.00629  p_raw=0.00629  mean_a=0.04928 mean_b=0.05949
+  saliency_skewness        adaptation       non_adapted_vs_fully_adapted             p_raw=0.00881  p_raw=0.00881  mean_a=4.377 mean_b=3.568
+  saliency_kurtosis        adaptation       non_adapted_vs_fully_adapted             p_raw=0.011  p_raw=0.011  mean_a=25.04 mean_b=16.14
+  saliency_skewness        adaptation       omnibus_non_semi_full                    p_raw=0.0206  p_raw=0.0206  means non=4.377 semi=4.018 full=3.568
+  saliency_mean            adaptation       omnibus_non_semi_full                    p_raw=0.0218  p_raw=0.0218  means non=0.04928 semi=0.05406 full=0.05949
+  saliency_kurtosis        adaptation       omnibus_non_semi_full                    p_raw=0.0341  p_raw=0.0341  means non=25.04 semi=20.97 full=16.14
+  saliency_std             adaptation       non_adapted_vs_fully_adapted             p_raw=0.04  p_raw=0.04  mean_a=0.1025 mean_b=0.1141
+
+── visalformer ──
+  none
+
+══ FDR-BH WITHIN FACTOR (primary corrected) ══
+
+── clipgaze ──
+  fixation_count           question_level   Q1_vs_Q2                                 p_raw=1.32e-06  p_fdr_factor=4.21e-05  mean_a=3.958 mean_b=5.458
+  mean_saccade_mag         question_level   Q1_vs_Q2                                 p_raw=2.06e-05  p_fdr_factor=0.000241  mean_a=55.51 mean_b=35.51
+  info_processing_idx      question_level   Q1_vs_Q2                                 p_raw=2.26e-05  p_fdr_factor=0.000241  mean_a=0.0005137 mean_b=0.0002911
+  saliency_spread          question_level   Q1_vs_Q2                                 p_raw=0.00012  p_fdr_factor=0.000962  mean_a=251.1 mean_b=224.5
+
+── low_level ──
+  data_utility             graph_nodes      6_vs_12                                  p_raw=7.71e-12  p_fdr_factor=2.47e-10  mean_a=13 mean_b=25
+  effectiveness            graph_nodes      6_vs_12                                  p_raw=3.06e-09  p_fdr_factor=4.9e-08  mean_a=0.01708 mean_b=0.03292
+  digital_ink              graph_nodes      6_vs_12                                  p_raw=2.26e-05  p_fdr_factor=0.000121  mean_a=761.3 mean_b=759.5
+  digital_ink              adaptation       non_adapted_vs_fully_adapted             p_raw=0.000238  p_fdr_factor=0.0305  mean_a=761 mean_b=759.4
+
+── sum ──
+  saliency_spread          graph_nodes      6_vs_12                                  p_raw=4.93e-08  p_fdr_factor=5.26e-07  mean_a=67.67 mean_b=57.14
+  saliency_center_bias     graph_nodes      6_vs_12                                  p_raw=2.01e-06  p_fdr_factor=1.6e-05  mean_a=0.357 mean_b=0.3082
+  saliency_entropy         graph_nodes      6_vs_12                                  p_raw=3.32e-06  p_fdr_factor=2.13e-05  mean_a=14.49 mean_b=14.24
+
+── visalformer ──
+  none
+
+══ FDR-BH GLOBAL ══
+
+── clipgaze ──
+  fixation_count           question_level   Q1_vs_Q2                                 p_raw=1.32e-06  p_fdr_global=6.31e-05  mean_a=3.958 mean_b=5.458
+  mean_saccade_mag         question_level   Q1_vs_Q2                                 p_raw=2.06e-05  p_fdr_global=0.000483  mean_a=55.51 mean_b=35.51
+  info_processing_idx      question_level   Q1_vs_Q2                                 p_raw=2.26e-05  p_fdr_global=0.000483  mean_a=0.0005137 mean_b=0.0002911
+  saliency_spread          question_level   Q1_vs_Q2                                 p_raw=0.00012  p_fdr_global=0.00231  mean_a=251.1 mean_b=224.5
+
+── low_level ──
+  data_utility             graph_nodes      6_vs_12                                  p_raw=7.71e-12  p_fdr_global=1.48e-09  mean_a=13 mean_b=25
+  effectiveness            graph_nodes      6_vs_12                                  p_raw=3.06e-09  p_fdr_global=2.94e-07  mean_a=0.01708 mean_b=0.03292
+  digital_ink              graph_nodes      6_vs_12                                  p_raw=2.26e-05  p_fdr_global=0.000483  mean_a=761.3 mean_b=759.5
+  digital_ink              adaptation       non_adapted_vs_fully_adapted             p_raw=0.000238  p_fdr_global=0.00416  mean_a=761 mean_b=759.4
+  digital_ink              adaptation       omnibus_non_semi_full                    p_raw=0.00115  p_fdr_global=0.0184  means non=761 semi=760.8 full=759.4
+
+── sum ──
+  saliency_spread          graph_nodes      6_vs_12                                  p_raw=4.93e-08  p_fdr_global=3.15e-06  mean_a=67.67 mean_b=57.14
+  saliency_center_bias     graph_nodes      6_vs_12                                  p_raw=2.01e-06  p_fdr_global=7.7e-05  mean_a=0.357 mean_b=0.3082
+  saliency_entropy         graph_nodes      6_vs_12                                  p_raw=3.32e-06  p_fdr_global=0.000106  mean_a=14.49 mean_b=14.24
+
+══ BONFERRONI WITHIN FACTOR ══
+
+── clipgaze ──
+  fixation_count           question_level   Q1_vs_Q2                                 p_raw=1.32e-06  p_bonferroni_factor=4.21e-05  mean_a=3.958 mean_b=5.458
+  mean_saccade_mag         question_level   Q1_vs_Q2                                 p_raw=2.06e-05  p_bonferroni_factor=0.00066  mean_a=55.51 mean_b=35.51
+  info_processing_idx      question_level   Q1_vs_Q2                                 p_raw=2.26e-05  p_bonferroni_factor=0.000724  mean_a=0.0005137 mean_b=0.0002911
+  saliency_spread          question_level   Q1_vs_Q2                                 p_raw=0.00012  p_bonferroni_factor=0.00385  mean_a=251.1 mean_b=224.5
+
+── low_level ──
+  data_utility             graph_nodes      6_vs_12                                  p_raw=7.71e-12  p_bonferroni_factor=2.47e-10  mean_a=13 mean_b=25
+  effectiveness            graph_nodes      6_vs_12                                  p_raw=3.06e-09  p_bonferroni_factor=9.8e-08  mean_a=0.01708 mean_b=0.03292
+  digital_ink              graph_nodes      6_vs_12                                  p_raw=2.26e-05  p_bonferroni_factor=0.000724  mean_a=761.3 mean_b=759.5
+  digital_ink              adaptation       non_adapted_vs_fully_adapted             p_raw=0.000238  p_bonferroni_factor=0.0305  mean_a=761 mean_b=759.4
+
+── sum ──
+  saliency_spread          graph_nodes      6_vs_12                                  p_raw=4.93e-08  p_bonferroni_factor=1.58e-06  mean_a=67.67 mean_b=57.14
+  saliency_center_bias     graph_nodes      6_vs_12                                  p_raw=2.01e-06  p_bonferroni_factor=6.42e-05  mean_a=0.357 mean_b=0.3082
+  saliency_entropy         graph_nodes      6_vs_12                                  p_raw=3.32e-06  p_bonferroni_factor=0.000106  mean_a=14.49 mean_b=14.24
+
+══ NEAR-CONSTANT (excluded from correction; not claimed) ══
+  visalformer  saliency_max
+  visalformer  saliency_min
+  sum          saliency_max
+  sum          saliency_min
+  clipgaze     saliency_max
+  clipgaze     saliency_min
+
+INTERPRETATION HINT
+Uncorrected splits only show that some image statistics differ by condition
+label. That is a stimulus check, not evidence that the feature tracks human
+benefit. Compare features to RT / accuracy / ET / ISC in script 04.
+

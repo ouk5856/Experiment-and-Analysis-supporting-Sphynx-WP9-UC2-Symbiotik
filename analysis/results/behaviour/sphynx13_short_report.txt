@@ -1,0 +1,64 @@
+SPHYNX PILOT (N=13) — SHORT REPORT
+624 trials (48 each). RT = keypress.rt − image.started. No 18s imputation.
+Unanswered = no RT; count as incorrect for accuracy.
+
+────────────────────────────────────────
+WHY p_adj IS SOMETIMES NaN
+────────────────────────────────────────
+Bonferroni adjustment is applied ONLY within pairwise comparison families
+(e.g. all non/semi/full Fisher or Mann–Whitney pairs for one outcome × scope).
+
+p_adj stays NaN for tests that are NOT in those families:
+  • omnibus tests (Kruskal / chi² / 2-level Fisher omnibus)
+  • paired tests (McNemar, Wilcoxon signed-rank)
+
+That is intentional, not a bug. Significance still uses p_raw when p_adj is NaN
+(significant if fillna(p_raw) < .05).
+
+────────────────────────────────────────
+OVERALL
+────────────────────────────────────────
+Response rate: 92.8% (579/624)
+Accuracy:      76.3% (476/624)  — misses counted wrong
+
+────────────────────────────────────────
+WHAT WE OBSERVE (POOLED)
+────────────────────────────────────────
+
+1) QUESTION COMPLEXITY (strongest effect)
+   Q2 is harder than Q1 on every outcome:
+   • RT median ~10.7s vs ~6.3s (p ≈ 0)
+   • Response rate 87% vs 99%
+   • Accuracy 61% vs 92%
+
+2) GRAPH SIZE
+   12-node harder than 6-node:
+   • RT median ~9.5s vs ~7.3s
+   • Response rate 89% vs 97%
+   • Accuracy 68% vs 85%
+
+3) ADAPTATION (main design interest)
+   Fully adapted > non-adapted:
+   • Faster RT (median ~7.2s vs ~9.5s)
+   • Higher response rate (96% vs 88%)
+   • Semi sits in between on RT/response; accuracy: full 80%, semi 78%, non 71%
+
+   Question-aligned paired non vs full (same question):
+   • RT: full clearly faster (all graphs p≈1e-17; 12-node p≈2e-9)
+   • Response: full better (p≈.003)
+   • Accuracy: full better especially on 12-node (58% → 80%, p=.0001)
+
+4) WHERE DIFFICULTY HITS
+   Misses and errors concentrate on 12-node + Q2, especially under non/semi adaptation.
+   Full adaptation protects response rate and RT most on those hard cells.
+
+────────────────────────────────────────
+TAKEAWAY
+────────────────────────────────────────
+With N=13 the pilot pattern is clear and consistent:
+harder questions and larger graphs cost time, accuracy, and completions;
+full visual adaptation helps — strongest evidence on RT and on matched
+non vs full comparisons, including accuracy on 12-node graphs.
+
+Caveat: pooled tests treat trials as independent (ignore participant clustering);
+still exploratory, but effects are large and directionally stable across people.

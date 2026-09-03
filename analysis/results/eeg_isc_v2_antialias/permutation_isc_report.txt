@@ -1,0 +1,42 @@
+SPHYNX-13 EEG ISC v2 — PERMUTATION INFERENCE
+========================================================================
+
+Permutations per test: 5000
+Level null: independent circular time shift per subject, then LOO ISC.
+Contrast null: random sign flip on paired Fisher-z differences.
+
+ISC LEVEL — circular shift (one-sided: observed > null), GFP adaptation
+  fully_adapted   ISC_r=0.226 null_mean=0.000 p_perm=0.0022 FDR_factor=0.002639
+  non_adapted     ISC_r=0.411 null_mean=0.001 p_perm=0.0002 FDR_factor=0.0002999
+  semi_adapted    ISC_r=0.111 null_mean=-0.001 p_perm=0.03459 FDR_factor=0.03459
+
+ISC LEVEL — significant after FDR within factor (any signal)
+  gfp_isc question_level=2: p_perm=0.0002 p_fdr=0.0002666
+  gfp_isc graph_nodes=12: p_perm=0.0002 p_fdr=0.0002666
+  occ_isc graph_nodes=6: p_perm=0.0002 p_fdr=0.0002666
+  occ_isc graph_nodes=12: p_perm=0.0002 p_fdr=0.0002666
+  occ_isc question_level=2: p_perm=0.0002 p_fdr=0.0002666
+  occ_isc question_level=1: p_perm=0.0002 p_fdr=0.0002666
+  gfp_isc adaptation=non_adapted: p_perm=0.0002 p_fdr=0.0002999
+  occ_isc adaptation=non_adapted: p_perm=0.0002 p_fdr=0.0002999
+  occ_isc adaptation=semi_adapted: p_perm=0.0002 p_fdr=0.0002999
+  occ_isc adaptation=fully_adapted: p_perm=0.0002 p_fdr=0.0002999
+  gfp_isc graph_nodes=6: p_perm=0.0012 p_fdr=0.0012
+  gfp_isc question_level=1: p_perm=0.0014 p_fdr=0.0014
+  gfp_isc adaptation=fully_adapted: p_perm=0.0022 p_fdr=0.002639
+  gfp_isc adaptation=semi_adapted: p_perm=0.03459 p_fdr=0.03459
+
+CONTRASTS — sign-flip permutation vs Wilcoxon (GFP)
+  adaptation non_adapted vs semi_adapted: r=0.411 vs 0.111 p_perm=0.0002 p_wilcoxon=0.0007324 FDR_perm=0.0012
+  graph_nodes 6 vs 12: r=0.251 vs 0.396 p_perm=0.0012 p_wilcoxon=0.001221 FDR_perm=0.0024
+  adaptation non_adapted vs fully_adapted: r=0.411 vs 0.226 p_perm=0.0014 p_wilcoxon=0.004639 FDR_perm=0.004199
+  question_level 1 vs 2: r=0.295 vs 0.462 p_perm=0.0244 p_wilcoxon=0.03271 FDR_perm=0.04879
+  adaptation semi_adapted vs fully_adapted: r=0.111 vs 0.226 p_perm=0.05699 p_wilcoxon=0.08032 FDR_perm=0.08548
+
+CONTRASTS — significant permutation FDR within factor
+  gfp_isc adaptation non_adapted vs semi_adapted: p_perm=0.0002
+  gfp_isc graph_nodes 6 vs 12: p_perm=0.0012
+  gfp_isc adaptation non_adapted vs fully_adapted: p_perm=0.0014
+  occ_isc graph_nodes 6 vs 12: p_perm=0.009198
+  occ_isc adaptation non_adapted vs semi_adapted: p_perm=0.006799
+  gfp_isc question_level 1 vs 2: p_perm=0.0244

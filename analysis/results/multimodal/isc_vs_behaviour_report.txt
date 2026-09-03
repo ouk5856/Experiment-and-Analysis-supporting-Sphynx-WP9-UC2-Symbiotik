@@ -1,0 +1,32 @@
+SUBJECT-LEVEL ISC vs BEHAVIOUR
+==================================================
+
+N participants: 13 (ISC from EEG anti-alias ICA+FASTER; for_report/results/eeg_isc_v2_antialias/)
+Bootstrap CIs: 5000 resamples
+ISC source: /home/user/Documents/sphynx pilots stuff/All data/post_analysis/for_report/results/eeg_isc_v2_antialias/analysisA_subject_loo_v2.csv
+
+--- gfp_isc ---
+  non_adapted     vs mean_rt   : rho=+0.121 p=0.694 CI=[-0.559, +0.686]
+  non_adapted     vs accuracy  : rho=+0.233 p=0.444 CI=[-0.375, +0.738]
+  semi_adapted    vs mean_rt   : rho=-0.165 p=0.590 CI=[-0.743, +0.484]
+  semi_adapted    vs accuracy  : rho=+0.329 p=0.273 CI=[-0.238, +0.745]
+  fully_adapted   vs mean_rt   : rho=+0.192 p=0.529 CI=[-0.415, +0.731]
+  fully_adapted   vs accuracy  : rho=-0.331 p=0.269 CI=[-0.867, +0.356]
+  PAIRED delta_RT_non_minus_full: rho=-0.016 p=0.957 CI=[-0.597, +0.557]
+  PAIRED delta_accuracy_non_minus_full: rho=-0.429 p=0.144 CI=[-0.847, +0.306]
+
+--- occ_isc ---
+  non_adapted     vs mean_rt   : rho=+0.516 p=0.071 CI=[-0.053, +0.836]
+  non_adapted     vs accuracy  : rho=+0.006 p=0.985 CI=[-0.645, +0.663]
+  semi_adapted    vs mean_rt   : rho=-0.385 p=0.194 CI=[-0.799, +0.322]
+  semi_adapted    vs accuracy  : rho=+0.236 p=0.438 CI=[-0.438, +0.785]
+  fully_adapted   vs mean_rt   : rho=-0.181 p=0.553 CI=[-0.793, +0.487]
+  fully_adapted   vs accuracy  : rho=-0.079 p=0.799 CI=[-0.729, +0.576]
+  PAIRED delta_RT_non_minus_full: rho=-0.170 p=0.578 CI=[-0.717, +0.469]
+  PAIRED delta_accuracy_non_minus_full: rho=+0.242 p=0.425 CI=[-0.371, +0.737]
+
+Interpretation:
+- Positive rho for ISC vs RT = higher synchrony -> slower (more shared struggle)
+- Negative rho for ISC vs accuracy = higher synchrony -> less accurate
+- Paired diff: does ISC benefit predict RT benefit?
+- Exploratory battery: no FDR claim across these Spearmans.

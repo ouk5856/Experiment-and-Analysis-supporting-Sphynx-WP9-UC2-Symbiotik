@@ -1,0 +1,9 @@
+kind,source,feature,outcome,n,spearman_r,p_raw,p_fdr_outcome,sig_raw_0.05,sig_fdr_outcome
+clipgaze_vs_human_et,clipgaze,fixation_count,et_n_fixations,48,-0.09965809612203949,0.5003544367314382,0.5126499959321129,False,False
+clipgaze_vs_human_et_residual,clipgaze,fixation_count,et_n_fixations,48,0.28983541608463775,0.04569210878265954,0.18276843513063817,True,False
+clipgaze_vs_human_et,clipgaze,fixation_duration_mean,et_mean_fix_dur,48,0.09683022145028224,0.5126499959321129,0.5126499959321129,False,False
+clipgaze_vs_human_et_residual,clipgaze,fixation_duration_mean,et_mean_fix_dur,48,0.16000868432479373,0.2773157092281708,0.411252376856611,False,False
+clipgaze_vs_human_et,clipgaze,mean_saccade_mag,et_mean_saccade_mag,48,0.2910334346504559,0.04476431277523335,0.1790572511009334,True,False
+clipgaze_vs_human_et_residual,clipgaze,mean_saccade_mag,et_mean_saccade_mag,48,0.15013026487190623,0.30843928264245823,0.411252376856611,False,False
+clipgaze_vs_human_et,clipgaze,scanpath_length,et_sum_fix_dur,48,-0.14209726443768997,0.3353324876276367,0.5126499959321129,False,False
+clipgaze_vs_human_et_residual,clipgaze,scanpath_length,et_sum_fix_dur,48,0.03842813721233174,0.7953916426543818,0.7953916426543818,False,False

@@ -1,0 +1,49 @@
+graph_image,graph_complexity,question_complexity,visualisation_type,update_questions,answer,question_id
+samples/6 node/6_nodes_S00002/no_caption/non_adapted.png,6,1,non_adapted,How many CYBER OBSERVABLE nodes are in the graph?,5,1
+samples/6 node/6_nodes_S00005/no_caption/non_adapted.png,6,1,non_adapted,How many nodes have TLP:GREEN?,3,2
+samples/6 node/6_nodes_S00008/no_caption/non_adapted.png,6,1,non_adapted,Count the number of nodes with high connection counts (node size 7-10),2,3
+samples/6 node/6_nodes_S00014/no_caption/non_adapted.png,6,1,non_adapted,How many low confidence (confidence 1-3) edges exist in the graph?,3,4
+samples/6 node/6_nodes_S00017/no_caption/non_adapted.png,6,2,non_adapted,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,1,5
+samples/6 node/6_nodes_S00020/no_caption/non_adapted.png,6,2,non_adapted,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,2,6
+samples/6 node/6_nodes_S00023/no_caption/non_adapted.png,6,2,non_adapted,Count the number of MALWARE nodes with high connection counts (node size 7-10),0,7
+samples/6 node/6_nodes_S00026/no_caption/non_adapted.png,6,2,non_adapted,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,1,8
+samples/6 node/6_nodes_S00065/no_caption/fully_adapted.png,6,1,fully_adapted,How many CYBER OBSERVABLE nodes are in the graph?,2,9
+samples/6 node/6_nodes_S00068/no_caption/fully_adapted.png,6,1,fully_adapted,How many nodes have TLP:GREEN?,5,10
+samples/6 node/6_nodes_S00071/no_caption/fully_adapted.png,6,1,fully_adapted,Count the number of nodes with high connection counts (node size 7-10),1,11
+samples/6 node/6_nodes_S00074/no_caption/fully_adapted.png,6,1,fully_adapted,How many low confidence (confidence 1-3) edges exist in the graph?,2,12
+samples/6 node/6_nodes_S00077/no_caption/fully_adapted.png,6,2,fully_adapted,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,0,13
+samples/6 node/6_nodes_S00080/no_caption/fully_adapted.png,6,2,fully_adapted,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,1,14
+samples/6 node/6_nodes_S00083/no_caption/fully_adapted.png,6,2,fully_adapted,Count the number of MALWARE nodes with high connection counts (node size 7-10),1,15
+samples/6 node/6_nodes_S00086/no_caption/fully_adapted.png,6,2,fully_adapted,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,0,16
+samples/6 node/6_nodes_S00125/no_caption/nodes_shape_tlp.png,6,1,shape_nodes,How many CYBER OBSERVABLE nodes are in the graph?,2,17
+samples/6 node/6_nodes_S00128/no_caption/nodes_color_type.png,6,1,color_nodes,How many nodes have TLP:GREEN?,1,18
+samples/6 node/6_nodes_S00131/no_caption/nodes_size_value.png,6,1,size_nodes,Count the number of nodes with high connection counts (node size 7-10),3,19
+samples/6 node/6_nodes_S00134/no_caption/edge_width_connection_number.png,6,1,edge_width,How many low confidence (confidence 1-3) edges exist in the graph?,3,20
+samples/6 node/6_nodes_S00137/no_caption/nodes_shape_tlp.png,6,2,shape_nodes,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,2,21
+samples/6 node/6_nodes_S00140/no_caption/nodes_color_type.png,6,2,color_nodes,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,0,22
+samples/6 node/6_nodes_S00143/no_caption/nodes_size_value.png,6,2,size_nodes,Count the number of MALWARE nodes with high connection counts (node size 7-10),2,23
+samples/6 node/6_nodes_S00146/no_caption/edge_width_connection_number.png,6,2,edge_width,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,2,24
+samples/12 node/12_nodes_S00003/no_caption/non_adapted.png,12,1,non_adapted,How many CYBER OBSERVABLE nodes are in the graph?,4,25
+samples/12 node/12_nodes_S00006/no_caption/non_adapted.png,12,1,non_adapted,How many nodes have TLP:GREEN?,1,26
+samples/12 node/12_nodes_S00009/no_caption/non_adapted.png,12,1,non_adapted,Count the number of nodes with high connection counts (node size 7-10),7,27
+samples/12 node/12_nodes_S00012/no_caption/non_adapted.png,12,1,non_adapted,How many low confidence (confidence 1-3) edges exist in the graph?,8,28
+samples/12 node/12_nodes_S00015/no_caption/non_adapted.png,12,2,non_adapted,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,2,29
+samples/12 node/12_nodes_S00018/no_caption/non_adapted.png,12,2,non_adapted,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,3,30
+samples/12 node/12_nodes_S00024/no_caption/non_adapted.png,12,2,non_adapted,Count the number of MALWARE nodes with high connection counts (node size 7-10),3,31
+samples/12 node/12_nodes_S00027/no_caption/non_adapted.png,12,2,non_adapted,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,5,32
+samples/12 node/12_nodes_S00072/no_caption/fully_adapted.png,12,1,fully_adapted,How many CYBER OBSERVABLE nodes are in the graph?,3,33
+samples/12 node/12_nodes_S00075/no_caption/fully_adapted.png,12,1,fully_adapted,How many nodes have TLP:GREEN?,4,34
+samples/12 node/12_nodes_S00081/no_caption/fully_adapted.png,12,1,fully_adapted,Count the number of nodes with high connection counts (node size 7-10),7,35
+samples/12 node/12_nodes_S00084/no_caption/fully_adapted.png,12,1,fully_adapted,How many low confidence (confidence 1-3) edges exist in the graph?,7,36
+samples/12 node/12_nodes_S00087/no_caption/fully_adapted.png,12,2,fully_adapted,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,3,37
+samples/12 node/12_nodes_S00090/no_caption/fully_adapted.png,12,2,fully_adapted,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,1,38
+samples/12 node/12_nodes_S00093/no_caption/fully_adapted.png,12,2,fully_adapted,Count the number of MALWARE nodes with high connection counts (node size 7-10),1,39
+samples/12 node/12_nodes_S00096/no_caption/fully_adapted.png,12,2,fully_adapted,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,4,40
+samples/12 node/12_nodes_S00135/no_caption/nodes_shape_tlp.png,12,1,shape_nodes,How many CYBER OBSERVABLE nodes are in the graph?,4,41
+samples/12 node/12_nodes_S00138/no_caption/nodes_color_type.png,12,1,color_nodes,How many nodes have TLP:GREEN?,4,42
+samples/12 node/12_nodes_S00141/no_caption/nodes_size_value.png,12,1,size_nodes,Count the number of nodes with high connection counts (node size 7-10),4,43
+samples/12 node/12_nodes_S00144/no_caption/edge_width_connection_number.png,12,1,edge_width,How many low confidence (confidence 1-3) edges exist in the graph?,3,44
+samples/12 node/12_nodes_S00147/no_caption/nodes_shape_tlp.png,12,2,shape_nodes,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,2,45
+samples/12 node/12_nodes_S00150/no_caption/nodes_color_type.png,12,2,color_nodes,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,46
+samples/12 node/12_nodes_S00153/no_caption/nodes_size_value.png,12,2,size_nodes,Count the number of MALWARE nodes with high connection counts (node size 7-10),1,47
+samples/12 node/12_nodes_S00156/no_caption/edge_width_connection_number.png,12,2,edge_width,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,4,48

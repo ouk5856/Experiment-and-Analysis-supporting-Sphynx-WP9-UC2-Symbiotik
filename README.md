@@ -1,23 +1,32 @@
-# for_report — WP9 UC2 / D9.4 package
+# WP9 Use Case 2 — Experiment & Analysis
 
-Lean package for writing the deliverable. Everything else which is not necessary is archived.
+This repository contains the experiment design and post-experiment analysis for **WP9 Use Case 2**, supporting deliverable **D9.4**.
 
-## Read these
+---
 
-| File | Role |
-|------|------|
-| [`D9_4_WP9_UC2_REPORT_SUMMARY.md`](D9_4_WP9_UC2_REPORT_SUMMARY.md) | Results brief (adaptation-first, significance + tests) |
-| [`ANALYSIS_STEPS_METHODS.md`](ANALYSIS_STEPS_METHODS.md) | What / why / how justified per analysis step |
+## Folder Structure
 
-## Reproduce / verify
+### [`experiment files/`](experiment%20files/)
 
-| Path | Contents |
-|------|----------|
-| `scripts/` | Behaviour, mixed models / multimodal / effect sizes, EEG anti-alias ISC, image features |
-| `results/` | Canonical CSVs and reports used by the two docs above |
+Experiment design, stimuli, and justification behind decisions.
 
-Canonical EEG ISC: `results/eeg_isc_v2_antialias/`.
+Contains the PsychoPy experiment files, participant instructions, stimulus lists, visual legends, and a detailed `readme.md` describing:
 
-## Archive not present in report data
+- How and why the CTI graph stimuli were redesigned from the original Sphynx material.
+- The question-answering paradigm and its ISC-compatibility constraints.
+- Pilot testing (two rounds, 4 participants) and the changes that resulted.
+- The final protocol used for the 13-participant main experiment.
+- Key design decisions with literature justification.
 
-full technical narrative, citations log, audit, run/source paths, historical EEG v2, pre-refresh ISC↔behaviour / effect-size snapshots, early cross-analysis notes.
+### [`analysis/`](analysis/)
+
+Post-experiment analysis pipeline and results for the D9.4 report.
+
+Contains analysis scripts, result files, and two summary documents:
+
+- **`D9_4_WP9_UC2_REPORT_SUMMARY.md`** — Results brief focusing on adaptation conditions, with statistical significance, tests used, and justifications.
+- **`ANALYSIS_STEPS_METHODS.md`** — Step-by-step description of what analysis was performed, why, and how it is justified.
+- **`scripts/`** — Behavioural mixed models, multimodal ISC (EEG, eye-tracking, PPG), image feature extraction, cross-comparisons, and effect sizes.
+- **`results/`** — Canonical CSV outputs and reports referenced by the documents above.
+
+The analysis flow is: behavioural analysis → multimodal ISC across conditions → image feature extraction → cross-comparison of features with human data (behaviour and sensors).

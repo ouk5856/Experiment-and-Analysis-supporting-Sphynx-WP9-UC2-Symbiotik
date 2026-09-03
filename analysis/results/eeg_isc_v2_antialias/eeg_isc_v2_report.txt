@@ -1,0 +1,53 @@
+SPHYNX-13 EEG ISC v2 (ICA + FASTER + corrected stats)
+========================================================================
+
+Trials loaded: 603
+Preprocessing retention: 603/624 (97%)
+Participants with EEG: 13
+
+ISC levels (main factors, GFP)
+  adaptation      fully_adapted        ISC_r=0.226 n=13
+  adaptation      non_adapted          ISC_r=0.411 n=13
+  adaptation      semi_adapted         ISC_r=0.111 n=13
+  graph_nodes     12                   ISC_r=0.396 n=13
+  graph_nodes     6                    ISC_r=0.251 n=13
+  question_level  1                    ISC_r=0.295 n=13
+  question_level  2                    ISC_r=0.462 n=13
+
+Contrasts — raw p<.05
+  gfp_isc adaptation non_adapted vs semi_adapted: r=0.411 vs 0.111 p_raw=0.0007324
+  gfp_isc graph_nodes 6 vs 12: r=0.251 vs 0.396 p_raw=0.001221
+  gfp_isc adaptation non_adapted vs fully_adapted: r=0.411 vs 0.226 p_raw=0.004639
+  occ_isc adaptation non_adapted vs semi_adapted: r=0.188 vs 0.251 p_raw=0.004639
+  occ_isc graph_nodes 6 vs 12: r=0.255 vs 0.311 p_raw=0.0105
+  gfp_isc question_level 1 vs 2: r=0.295 vs 0.462 p_raw=0.03271
+
+Contrasts — FDR within factor (primary corrected claim)
+  gfp_isc graph_nodes 6 vs 12: p_fdr=0.002441
+  gfp_isc adaptation non_adapted vs semi_adapted: p_fdr=0.004395
+  gfp_isc adaptation non_adapted vs fully_adapted: p_fdr=0.009277
+  occ_isc adaptation non_adapted vs semi_adapted: p_fdr=0.009277
+  occ_isc graph_nodes 6 vs 12: p_fdr=0.0105
+
+Contrasts — FDR global
+  gfp_isc adaptation non_adapted vs semi_adapted: p_fdr_global=0.006104
+  gfp_isc graph_nodes 6 vs 12: p_fdr_global=0.006104
+  gfp_isc adaptation non_adapted vs fully_adapted: p_fdr_global=0.0116
+  occ_isc adaptation non_adapted vs semi_adapted: p_fdr_global=0.0116
+  occ_isc graph_nodes 6 vs 12: p_fdr_global=0.021
+
+v1 vs v2 — GFP adaptation levels
+  fully_adapted   v1=0.178 v2=0.226 delta=+0.048
+  non_adapted     v1=0.401 v2=0.411 delta=+0.010
+  semi_adapted    v1=0.150 v2=0.111 delta=-0.039
+
+v1 vs v2 — adaptation contrasts (GFP)
+  non_adapted vs fully_adapted: v1 p=0.01855 sig_v1=True | v2 p_raw=0.004639 p_fdr=0.009277 sig_fdr=True
+  non_adapted vs semi_adapted: v1 p=0.0009766 sig_v1=True | v2 p_raw=0.0007324 p_fdr=0.004395 sig_fdr=True
+  semi_adapted vs fully_adapted: v1 p=0.8984 sig_v1=False | v2 p_raw=0.08032 p_fdr=0.1205 sig_fdr=False
+
+NOTES
+- v2: ICA + mne-faster (no EOG — eog_correlation excluded from component metrics).
+- v1: 400 µV peak-to-peak rejection, no ICA (~37% epochs dropped).
+- Primary corrected inference: FDR-BH within condition_factor.
+- LOO ISC Wilcoxon remains exploratory; correction addresses contrast multiplicity.

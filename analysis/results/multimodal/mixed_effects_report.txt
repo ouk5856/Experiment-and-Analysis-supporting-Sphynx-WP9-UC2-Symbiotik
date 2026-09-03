@@ -1,0 +1,57 @@
+MIXED-EFFECTS BEHAVIOURAL MODELS
+==================================================
+
+RT model: N=579 trials, 13 participants
+
+RT — main effects (reference: non_adapted, nodes=6, Q=1)
+                                                     Coef.  ...  0.975]
+Intercept                                            9.573  ...  10.172
+C(adapt, Treatment(reference='non_adapted'))[T....  -2.754  ...  -2.196
+C(adapt, Treatment(reference='non_adapted'))[T....  -1.595  ...  -1.035
+C(nodes)[T.6]                                       -2.322  ...  -1.868
+C(qlevel)[T.2]                                       4.311  ...   4.766
+Group Var                                            0.343  ...        
+
+[6 rows x 6 columns]
+
+RT — adaptation x question interaction
+                                                     Coef.  ...  0.975]
+Intercept                                            9.678  ...  10.314
+C(adapt, Treatment(reference='non_adapted'))[T....  -2.000  ...  -1.269
+C(adapt, Treatment(reference='non_adapted'))[T....  -2.617  ...  -1.886
+C(qlevel)[T.2]                                       4.109  ...   4.892
+C(nodes)[T.6]                                       -2.353  ...  -1.916
+C(adapt, Treatment(reference='non_adapted'))[T....  -1.538  ...  -0.459
+C(adapt, Treatment(reference='non_adapted'))[T....   2.169  ...   3.254
+Group Var                                            0.302  ...        
+
+[8 rows x 6 columns]
+
+Accuracy model (logit + clustered SEs): N=624 trials
+
+Accuracy — logistic regression with clustered SEs (ref: non_adapted, 6-node, Q1)
+                        Coef.  Std.Err.  ...    [0.025    0.975]
+const                2.767441  0.295003  ...  2.189245  3.345636
+adapt_semi_adapted   0.440067  0.184512  ...  0.078430  0.801703
+adapt_fully_adapted  0.578928  0.245645  ...  0.097472  1.060384
+nodes_12            -1.116301  0.223073  ... -1.553517 -0.679086
+qlevel_2            -2.066078  0.239812  ... -2.536102 -1.596055
+
+[5 rows x 6 columns]
+
+Accuracy — with adaptation x Q interaction
+                             Coef.  Std.Err.  ...    [0.025    0.975]
+const                     2.924689  0.278943  ...  2.377972  3.471406
+adapt_semi_adapted        0.249491  0.462246  ... -0.656494  1.155475
+adapt_fully_adapted       0.249491  0.423919  ... -0.581376  1.080357
+nodes_12                 -1.120659  0.221401  ... -1.554597 -0.686721
+qlevel_2                 -2.281202  0.281823  ... -2.833564 -1.728840
+adapt_semi_adapted_x_q2   0.262539  0.533832  ... -0.783753  1.308831
+adapt_fully_adapted_x_q2  0.444708  0.464924  ... -0.466526  1.355942
+
+[7 rows x 6 columns]
+
+COMPARISON TO POOLED TESTS
+- Mixed model accounts for within-participant clustering
+- If main effects remain significant, pooled tests were not misleading on direction
+- Check whether p-values increase (less significant) vs pooled — expected for N=13

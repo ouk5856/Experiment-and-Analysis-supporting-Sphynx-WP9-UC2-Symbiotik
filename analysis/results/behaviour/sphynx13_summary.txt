@@ -1,0 +1,458 @@
+SYMBIOTIK SPHYNX-13 PILOT ANALYSIS SUMMARY (RT + ACCURACY)
+========================================================================
+
+DATA FILES
+  - sphynx_12_Practice Trials - SYMBIOTIK graphs_2023_2026-07-03_16h16.14.521.csv
+  - sphynx_13_Practice Trials - SYMBIOTIK graphs_2023_2026-07-03_17h54.43.062.csv
+  - sphynx_3_Practice Trials - SYMBIOTIK graphs_2023_2026-06-18_20h30.46.859.csv
+  - trial_1_3_Practice Trials - SYMBIOTIK graphs_2023_2026-06-15_17h24.45.014.csv
+  - sphynx_6_Practice Trials - SYMBIOTIK graphs_2023_2026-06-23_19h12.02.418.csv
+  - sphynx_5_1_Practice Trials - SYMBIOTIK graphs_2023_2026-06-23_14h47.32.111.csv
+  - sphynx_7_Practice Trials - SYMBIOTIK graphs_2023_2026-06-25_16h48.00.825.csv
+  - sphynx_10_Practice Trials - SYMBIOTIK graphs_2023_2026-07-02_18h46.04.322.csv
+  - sphynx_4_Practice Trials - SYMBIOTIK graphs_2023_2026-06-19_16h05.26.052.csv
+  - sphynx_11_Practice Trials - SYMBIOTIK graphs_2023_2026-07-03_11h26.17.372.csv
+  - sphynx_8_Practice Trials - SYMBIOTIK graphs_2023_2026-06-25_19h10.23.194.csv
+  - sphynx_9_Practice Trials - SYMBIOTIK graphs_2023_2026-06-26_16h00.29.415.csv
+  - sphynx_2_Practice Trials - SYMBIOTIK graphs_2023_2026-06-18_17h55.48.139.csv
+
+SETTINGS
+  - Match answers by graph_image to answer-key CSV
+  - keypress.keys in {None, n, empty} treated as no answer
+  - Accuracy tests: all scorable trials; no response counts as incorrect
+  - RT = keypress.rt - image.started (PsychoPy clock fix for all participants)
+  - RT imputation: off (RT tests use responded trials only)
+
+TOTAL TRIALS ANALYSED: 624
+PARTICIPANTS: 13
+Trials with matched answer key: 624/624
+
+PARTICIPANT: sphynx_12
+  Mode: all adaptation levels
+  Response rate: 95.8% (46/48)
+  Accuracy (all trials): 85.4% (41/48)
+  Accuracy (answered only): 89.1% (41/46)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: question_level:1_vs_question_level:2 p=0.0005
+    - rt: question_level_omnibus(1,2) p=0.0005
+    - rt: graph_nodes_omnibus(6,12) p=0.0012
+    - rt: graph_nodes:6_vs_graph_nodes:12 p=0.0012
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0085
+
+PARTICIPANT: sphynx_13
+  Mode: all adaptation levels
+  Response rate: 95.8% (46/48)
+  Accuracy (all trials): 89.6% (43/48)
+  Accuracy (answered only): 93.5% (43/46)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0001
+    - rt: question_level:1_vs_question_level:2 p=0.0001
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0067
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0496
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0496
+    - rt: adapt_x_question_question_level=2 p=0.0499
+
+PARTICIPANT: sphynx_3
+  Mode: all adaptation levels
+  Response rate: 79.2% (38/48)
+  Accuracy (all trials): 64.6% (31/48)
+  Accuracy (answered only): 81.6% (31/38)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 50% responded (4/8)
+  6-node non_adapted   : 75% responded (6/8)
+  6-node semi_adapted  : 88% responded (7/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 75% responded (6/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0000
+    - rt: question_level:1_vs_question_level:2 p=0.0000
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0020
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0020
+    - responded_in_time: question_level_omnibus(1,2) p=0.0102
+    - responded_in_time: question_level:1_vs_question_level:2 p=0.0102
+
+PARTICIPANT: trial_1_3
+  Mode: all adaptation levels
+  Response rate: 93.8% (45/48)
+  Accuracy (all trials): 83.3% (40/48)
+  Accuracy (answered only): 88.9% (40/45)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 75% responded (6/8)
+  Significant tests:
+    - rt: question_level:1_vs_question_level:2 p=0.0000
+    - rt: question_level_omnibus(1,2) p=0.0000
+    - rt: paired_non_vs_full_12node_rt_both_responded p=0.0312
+
+PARTICIPANT: sphynx_6
+  Mode: all adaptation levels
+  Response rate: 89.6% (43/48)
+  Accuracy (all trials): 81.2% (39/48)
+  Accuracy (answered only): 90.7% (39/43)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 88% responded (7/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 75% responded (6/8)
+  Significant tests:
+    - rt: question_level:1_vs_question_level:2 p=0.0000
+    - rt: question_level_omnibus(1,2) p=0.0000
+    - rt: adapt:non_adapted_vs_semi_adapted_q1 p=0.0002
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0016
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0016
+    - rt: adapt_x_question_question_level=1 p=0.0070
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0327
+    - responded_in_time: question_level_omnibus(1,2) p=0.0496
+    - responded_in_time: question_level:1_vs_question_level:2 p=0.0496
+
+PARTICIPANT: sphynx_5_1
+  Mode: all adaptation levels
+  Response rate: 95.8% (46/48)
+  Accuracy (all trials): 79.2% (38/48)
+  Accuracy (answered only): 82.6% (38/46)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 88% responded (7/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0001
+    - rt: question_level:1_vs_question_level:2 p=0.0001
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0001
+    - rt: adapt:non_adapted_vs_fully_adapted p=0.0008
+    - rt: adaptation:fully_adapted_vs_adaptation:non_adapted p=0.0008
+    - rt: adapt_x_question_question_level=1 p=0.0012
+    - rt: adapt:non_adapted_vs_semi_adapted_q1 p=0.0012
+    - rt: adapt:non_adapted_vs_fully_adapted_q1 p=0.0030
+    - rt: adaptation_omnibus(fully_adapted,non_adapted,semi_adapted) p=0.0092
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0102
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0102
+    - rt: paired_non_vs_full_12node_rt_both_responded p=0.0156
+    - rt: adapt_x_question_question_level=2 p=0.0206
+
+PARTICIPANT: sphynx_7
+  Mode: all adaptation levels
+  Response rate: 97.9% (47/48)
+  Accuracy (all trials): 70.8% (34/48)
+  Accuracy (answered only): 72.3% (34/47)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0000
+    - rt: question_level:1_vs_question_level:2 p=0.0000
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0006
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0034
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0034
+    - rt: paired_non_vs_full_12node_rt_both_responded p=0.0156
+    - accuracy: accuracy_graph_nodes:6_vs_graph_nodes:12 p=0.0243
+    - accuracy: accuracy_graph_nodes_omnibus(6,12) p=0.0243
+    - rt: adapt_x_question_question_level=1 p=0.0289
+    - rt: adapt_x_question_question_level=2 p=0.0491
+
+PARTICIPANT: sphynx_10
+  Mode: all adaptation levels
+  Response rate: 95.8% (46/48)
+  Accuracy (all trials): 72.9% (35/48)
+  Accuracy (answered only): 76.1% (35/46)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0036
+    - rt: question_level:1_vs_question_level:2 p=0.0036
+    - rt: graph_nodes_omnibus(6,12) p=0.0134
+    - rt: graph_nodes:6_vs_graph_nodes:12 p=0.0134
+
+PARTICIPANT: sphynx_4
+  Mode: all adaptation levels
+  Response rate: 93.8% (45/48)
+  Accuracy (all trials): 75.0% (36/48)
+  Accuracy (answered only): 80.0% (36/45)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 88% responded (7/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0008
+    - rt: question_level:1_vs_question_level:2 p=0.0008
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0018
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0018
+    - rt: graph_nodes:6_vs_graph_nodes:12 p=0.0100
+    - rt: graph_nodes_omnibus(6,12) p=0.0100
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0215
+    - rt: adapt_x_question_question_level=2 p=0.0251
+    - responded_in_time: adapt_x_question_question_level=2 p=0.0324
+    - responded_in_time: adaptation_omnibus(fully_adapted,non_adapted,semi_adapted) p=0.0408
+    - rt: adapt_x_question_question_level=1 p=0.0461
+
+PARTICIPANT: sphynx_11
+  Mode: all adaptation levels
+  Response rate: 89.6% (43/48)
+  Accuracy (all trials): 70.8% (34/48)
+  Accuracy (answered only): 79.1% (34/43)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 88% responded (7/8)
+  12-node non_adapted   : 75% responded (6/8)
+  12-node semi_adapted  : 75% responded (6/8)
+  Significant tests:
+    - accuracy: accuracy_graph_nodes:6_vs_graph_nodes:12 p=0.0034
+    - accuracy: accuracy_graph_nodes_omnibus(6,12) p=0.0034
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0034
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0034
+    - rt: question_level_omnibus(1,2) p=0.0064
+    - rt: question_level:1_vs_question_level:2 p=0.0064
+    - responded_in_time: graph_nodes:6_vs_graph_nodes:12 p=0.0496
+    - responded_in_time: graph_nodes_omnibus(6,12) p=0.0496
+    - responded_in_time: question_level_omnibus(1,2) p=0.0496
+    - responded_in_time: question_level:1_vs_question_level:2 p=0.0496
+
+PARTICIPANT: sphynx_8
+  Mode: all adaptation levels
+  Response rate: 91.7% (44/48)
+  Accuracy (all trials): 70.8% (34/48)
+  Accuracy (answered only): 77.3% (34/44)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 88% responded (7/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 75% responded (6/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 100% responded (8/8)
+  Significant tests:
+    - rt: adapt:non_adapted_vs_fully_adapted p=0.0014
+    - rt: adaptation:fully_adapted_vs_adaptation:non_adapted p=0.0014
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0024
+    - rt: adaptation_omnibus(fully_adapted,non_adapted,semi_adapted) p=0.0030
+    - rt: adapt:semi_adapted_vs_fully_adapted_q2 p=0.0037
+    - rt: question_level:1_vs_question_level:2 p=0.0039
+    - rt: question_level_omnibus(1,2) p=0.0039
+    - rt: adaptation:fully_adapted_vs_adaptation:semi_adapted p=0.0073
+    - rt: adapt_x_question_question_level=2 p=0.0086
+    - rt: adapt_x_question_question_level=1 p=0.0301
+    - rt: adapt_x_graph_graph_nodes=6 p=0.0352
+
+PARTICIPANT: sphynx_9
+  Mode: all adaptation levels
+  Response rate: 91.7% (44/48)
+  Accuracy (all trials): 64.6% (31/48)
+  Accuracy (answered only): 70.5% (31/44)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 88% responded (7/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 88% responded (7/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 88% responded (7/8)
+  Significant tests:
+    - rt: question_level:1_vs_question_level:2 p=0.0008
+    - rt: question_level_omnibus(1,2) p=0.0008
+    - rt: adapt_x_question_question_level=2 p=0.0141
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0145
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0145
+
+PARTICIPANT: sphynx_2
+  Mode: all adaptation levels
+  Response rate: 95.8% (46/48)
+  Accuracy (all trials): 83.3% (40/48)
+  Accuracy (answered only): 87.0% (40/46)
+  Response rate by graph x adaptation:
+  6-node fully_adapted : 100% responded (8/8)
+  6-node non_adapted   : 100% responded (8/8)
+  6-node semi_adapted  : 100% responded (8/8)
+  12-node fully_adapted : 100% responded (8/8)
+  12-node non_adapted   : 88% responded (7/8)
+  12-node semi_adapted  : 88% responded (7/8)
+  Significant tests:
+    - rt: question_level_omnibus(1,2) p=0.0006
+    - rt: question_level:1_vs_question_level:2 p=0.0006
+    - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0015
+    - rt: graph_nodes:6_vs_graph_nodes:12 p=0.0017
+    - rt: graph_nodes_omnibus(6,12) p=0.0017
+    - rt: adapt:non_adapted_vs_semi_adapted_q1 p=0.0047
+    - rt: adapt_x_question_question_level=1 p=0.0132
+    - rt: paired_non_vs_full_12node_rt_both_responded p=0.0469
+    - accuracy: accuracy_question_level_omnibus(1,2) p=0.0479
+    - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0479
+
+POOLED SIGNIFICANT TESTS
+  - rt: question_level_omnibus(1,2) p=0.0000
+  - rt: question_level:1_vs_question_level:2 p=0.0000
+  - accuracy: accuracy_question_level_omnibus(1,2) p=0.0000
+  - accuracy: accuracy_question_level:1_vs_question_level:2 p=0.0000
+  - rt: paired_non_vs_full_all_graphs_rt_both_responded p=0.0000
+  - rt: adapt_x_question_question_level=1 p=0.0000
+  - rt: adapt:non_adapted_vs_semi_adapted_q1 p=0.0000
+  - rt: adapt_x_question_question_level=2 p=0.0000
+  - rt: adaptation:fully_adapted_vs_adaptation:non_adapted p=0.0000
+  - rt: adapt:non_adapted_vs_fully_adapted p=0.0000
+  - rt: adapt:non_adapted_vs_fully_adapted_q2 p=0.0000
+  - rt: graph_nodes:6_vs_graph_nodes:12 p=0.0000
+  - rt: graph_nodes_omnibus(6,12) p=0.0000
+  - responded_in_time: question_level:1_vs_question_level:2 p=0.0000
+  - responded_in_time: question_level_omnibus(1,2) p=0.0000
+  - rt: adaptation_omnibus(fully_adapted,non_adapted,semi_adapted) p=0.0000
+  - rt: paired_non_vs_full_12node_rt_both_responded p=0.0000
+  - rt: adapt:semi_adapted_vs_fully_adapted_q2 p=0.0000
+  - rt: adapt:non_adapted_vs_fully_adapted_q1 p=0.0000
+  - rt: adapt_x_graph_graph_nodes=12 p=0.0000
+  - accuracy: accuracy_graph_nodes_omnibus(6,12) p=0.0000
+  - accuracy: accuracy_graph_nodes:6_vs_graph_nodes:12 p=0.0000
+  - rt: adapt_x_graph_graph_nodes=6 p=0.0000
+  - rt: adapt:non_adapted_vs_semi_adapted p=0.0001
+  - rt: adaptation:non_adapted_vs_adaptation:semi_adapted p=0.0001
+  - accuracy: accuracy_paired_non_vs_full_12node p=0.0001
+  - responded_in_time: graph_nodes:6_vs_graph_nodes:12 p=0.0005
+  - responded_in_time: graph_nodes_omnibus(6,12) p=0.0005
+  - responded_in_time: adapt_x_question_question_level=2 p=0.0015
+  - responded_in_time: adapt:non_adapted_vs_fully_adapted_q2 p=0.0015
+  - responded_in_time: paired_non_vs_full_12node p=0.0030
+  - responded_in_time: paired_non_vs_full_all_graphs p=0.0030
+  - responded_in_time: adapt:non_adapted_vs_fully_adapted p=0.0031
+  - responded_in_time: adaptation:fully_adapted_vs_adaptation:non_adapted p=0.0031
+  - responded_in_time: adaptation_omnibus(fully_adapted,non_adapted,semi_adapted) p=0.0034
+  - responded_in_time: adapt_x_graph_graph_nodes=12 p=0.0038
+  - accuracy: accuracy_paired_non_vs_full_all_graphs p=0.0351
+
+PAIRED non_adapted vs fully_adapted (same question/image conditions)
+  [sphynx_10]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.219 n=6.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.068 n=14.0
+  [sphynx_11]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.312 n=5.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.080 n=13.0
+  [sphynx_12]
+    accuracy   accuracy_paired_non_vs_full_12node           p=0.500 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.500 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.219 n=6.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.009 n=14.0
+  [sphynx_13]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.094 n=6.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.007 n=14.0
+  [sphynx_2]
+    accuracy   accuracy_paired_non_vs_full_12node           p=0.500 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.750 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.047 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.002 n=15.0
+  [sphynx_3]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.109 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.102 n=11.0
+  [sphynx_4]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.500 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=0.500 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.312 n=6.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.021 n=13.0
+  [sphynx_5_1]
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.016 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.000 n=15.0
+  [sphynx_6]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.250 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=0.500 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.312 n=6.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.033 n=13.0
+  [sphynx_7]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.016 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.001 n=15.0
+  [sphynx_8]
+    accuracy   accuracy_paired_non_vs_full_12node           p=0.750 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.578 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.062 n=5.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.002 n=12.0
+  [sphynx_9]
+    accuracy   accuracy_paired_non_vs_full_12node           p=0.500 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.469 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.104 n=14.0
+  [trial_1_3]
+    accuracy   accuracy_paired_non_vs_full_12node           p=1.000 n=8.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=1.000 n=16.0
+    responded_in_time paired_non_vs_full_12node                    p=1.000 n=8.0
+    responded_in_time paired_non_vs_full_all_graphs                p=1.000 n=16.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.031 n=7.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.121 n=15.0
+  [pooled]
+    accuracy   accuracy_paired_non_vs_full_12node           p=0.000 n=104.0
+    accuracy   accuracy_paired_non_vs_full_all_graphs       p=0.035 n=208.0
+    responded_in_time paired_non_vs_full_12node                    p=0.003 n=104.0
+    responded_in_time paired_non_vs_full_all_graphs                p=0.003 n=208.0
+    rt         paired_non_vs_full_12node_rt_both_responded  p=0.000 n=82.0
+    rt         paired_non_vs_full_all_graphs_rt_both_responded p=0.000 n=178.0
+
+========================================================================
+DESIGN BULLET SUMMARY
+========================================================================
+- Cohort: 13 Sphynx pilot participants from exp data folder.
+- RT corrected via keypress.rt - image.started for all CSVs.
+- Unanswered trials excluded from RT; count as incorrect for accuracy.
+- Pooled tests ignore participant clustering; treat as exploratory.

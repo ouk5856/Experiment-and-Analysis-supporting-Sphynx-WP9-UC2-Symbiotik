@@ -1,0 +1,51 @@
+EFFECT SIZES — ALL MODALITIES
+==================================================
+
+Cohen's d (paired), bootstrap 5000 CIs on mean difference
+EEG ISC LOO: /home/user/Documents/sphynx pilots stuff/All data/post_analysis/for_report/results/eeg_isc_v2_antialias/analysisA_subject_loo_v2.csv (anti-alias)
+
+=== eeg_isc_v2_antialias ===
+  gfp_isc         adaptation      non_adapted vs fully_adapted: d=+0.90  mean_diff=+0.2066  CI=[+0.0919, +0.3327]
+  gfp_isc         adaptation      non_adapted vs semi_adapted: d=+1.51  mean_diff=+0.3254  CI=[+0.2131, +0.4373]
+  gfp_isc         graph_nodes     6 vs 12: d=-1.38  mean_diff=-0.1625  CI=[-0.2237, -0.1018]
+  gfp_isc         question_level  1 vs 2: d=-0.75  mean_diff=-0.1955  CI=[-0.3233, -0.0571]
+  occ_isc         adaptation      non_adapted vs fully_adapted: d=-0.37  mean_diff=-0.0310  CI=[-0.0724, +0.0127]
+  occ_isc         adaptation      non_adapted vs semi_adapted: d=-0.89  mean_diff=-0.0672  CI=[-0.1080, -0.0283]
+  occ_isc         graph_nodes     6 vs 12: d=-0.90  mean_diff=-0.0606  CI=[-0.0933, -0.0232]
+  occ_isc         question_level  1 vs 2: d=-0.33  mean_diff=-0.0220  CI=[-0.0559, +0.0132]
+
+=== multimodal_isc ===
+  eda_isc         adaptation      non_adapted vs fully_adapted: d=+1.21  mean_diff=+0.4367  CI=[+0.2417, +0.6533]
+  eda_isc         adaptation      non_adapted vs semi_adapted: d=-0.20  mean_diff=-0.1283  CI=[-0.4978, +0.2391]
+  eda_isc         graph_nodes     6 vs 12: d=-0.89  mean_diff=-0.7401  CI=[-1.2278, -0.2492]
+  eda_isc         question_level  1 vs 2: d=-0.46  mean_diff=-0.2450  CI=[-0.5777, +0.0140]
+  gx_isc          adaptation      non_adapted vs fully_adapted: d=+1.07  mean_diff=+0.2772  CI=[+0.1463, +0.4190]
+  gx_isc          adaptation      non_adapted vs semi_adapted: d=+0.09  mean_diff=+0.0373  CI=[-0.1820, +0.2599]
+  gx_isc          graph_nodes     6 vs 12: d=-0.28  mean_diff=-0.0765  CI=[-0.2153, +0.0574]
+  gx_isc          question_level  1 vs 2: d=+0.34  mean_diff=+0.0746  CI=[-0.0328, +0.1939]
+  gy_isc          adaptation      non_adapted vs fully_adapted: d=+0.88  mean_diff=+0.3035  CI=[+0.1330, +0.4983]
+  gy_isc          adaptation      non_adapted vs semi_adapted: d=+1.03  mean_diff=+0.3494  CI=[+0.1779, +0.5275]
+  gy_isc          graph_nodes     6 vs 12: d=-0.79  mean_diff=-0.2763  CI=[-0.4654, -0.0978]
+  gy_isc          question_level  1 vs 2: d=-0.33  mean_diff=-0.1256  CI=[-0.3172, +0.0883]
+  ppg_isc         adaptation      non_adapted vs fully_adapted: d=+0.26  mean_diff=+0.0575  CI=[-0.0572, +0.1867]
+  ppg_isc         adaptation      non_adapted vs semi_adapted: d=+0.42  mean_diff=+0.0575  CI=[-0.0183, +0.1370]
+  ppg_isc         graph_nodes     6 vs 12: d=-0.45  mean_diff=-0.2408  CI=[-0.5840, +0.0314]
+  ppg_isc         question_level  1 vs 2: d=-0.44  mean_diff=-0.1587  CI=[-0.3776, +0.0243]
+  pupil_isc       adaptation      non_adapted vs fully_adapted: d=-0.54  mean_diff=-0.1134  CI=[-0.2132, +0.0049]
+  pupil_isc       adaptation      non_adapted vs semi_adapted: d=-0.08  mean_diff=-0.0136  CI=[-0.1073, +0.0820]
+  pupil_isc       graph_nodes     6 vs 12: d=+0.20  mean_diff=+0.0704  CI=[-0.1214, +0.2521]
+  pupil_isc       question_level  1 vs 2: d=-0.08  mean_diff=-0.0302  CI=[-0.2375, +0.1478]
+
+=== behaviour ===
+  RT              adaptation      non_adapted vs fully_adapted: d=+2.35  mean_diff=+2.4698  CI=[+1.9294, +3.0412]
+  RT              adaptation      non_adapted vs semi_adapted: d=+1.33  mean_diff=+1.4266  CI=[+0.8666, +1.9748]
+  RT              graph_nodes     6 vs 12: d=-3.13  mean_diff=-2.1141  CI=[-2.4576, -1.7484]
+  RT              question_level  1 vs 2: d=-3.55  mean_diff=-4.1808  CI=[-4.8354, -3.5915]
+  accuracy        adaptation      non_adapted vs fully_adapted: d=-0.71  mean_diff=-0.0865  CI=[-0.1490, -0.0240]
+  accuracy        adaptation      non_adapted vs semi_adapted: d=-0.69  mean_diff=-0.0673  CI=[-0.1154, -0.0144]
+  accuracy        graph_nodes     6 vs 12: d=+1.46  mean_diff=+0.1667  CI=[+0.1122, +0.2308]
+  accuracy        question_level  1 vs 2: d=+2.71  mean_diff=+0.3077  CI=[+0.2468, +0.3654]
+
+Interpretation:
+  |d| < 0.2 = negligible, 0.2-0.5 = small, 0.5-0.8 = medium, > 0.8 = large
+  CI on mean difference (Fisher-z for ISC, seconds for RT, proportion for accuracy)

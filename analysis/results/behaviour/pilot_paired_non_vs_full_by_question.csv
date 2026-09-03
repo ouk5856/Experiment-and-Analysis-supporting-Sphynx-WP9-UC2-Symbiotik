@@ -1,0 +1,625 @@
+participant,question_id,graph_nodes,question_level,has_answer_key_fully_adapted,has_answer_key_non_adapted,is_correct_fully_adapted,is_correct_non_adapted,responded_in_time_fully_adapted,responded_in_time_non_adapted,rt_fully_adapted,rt_non_adapted,pair_filter,scope
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,6.751677400000062,8.261648900000182,all_graphs,sphynx_10
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,10.562999999999874,,all_graphs,sphynx_10
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.615807199999779,9.32948220000003,all_graphs,sphynx_10
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.79705630000035,13.007078000000092,all_graphs,sphynx_10
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,6.835718799999995,10.23614760000008,all_graphs,sphynx_10
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,8.038371199999801,9.103411900000083,all_graphs,sphynx_10
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,10.776037299999643,12.083571200000279,all_graphs,sphynx_10
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,False,10.458341399999881,,all_graphs,sphynx_10
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,4.164370899999994,6.603018699999723,all_graphs,sphynx_10
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.297043300000041,17.858796399999846,all_graphs,sphynx_10
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.488640400000122,6.103887700000541,all_graphs,sphynx_10
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.536737299999913,9.770571599999812,all_graphs,sphynx_10
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.996012700000051,5.727022399999896,all_graphs,sphynx_10
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,11.89308740000024,9.512932300000102,all_graphs,sphynx_10
+sphynx_10,How many nodes have TLP:GREEN?,6,1,True,True,False,True,True,True,14.780710800000207,6.299540400000069,all_graphs,sphynx_10
+sphynx_10,How many nodes have TLP:GREEN?,12,1,True,True,False,True,True,True,6.12086249999993,11.17017480000004,all_graphs,sphynx_10
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,10.562999999999874,,graph_12,sphynx_10
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.79705630000035,13.007078000000092,graph_12,sphynx_10
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,8.038371199999801,9.103411900000083,graph_12,sphynx_10
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,False,10.458341399999881,,graph_12,sphynx_10
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.297043300000041,17.858796399999846,graph_12,sphynx_10
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.536737299999913,9.770571599999812,graph_12,sphynx_10
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,11.89308740000024,9.512932300000102,graph_12,sphynx_10
+sphynx_10,How many nodes have TLP:GREEN?,12,1,True,True,False,True,True,True,6.12086249999993,11.17017480000004,graph_12,sphynx_10
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,9.221789299997909,7.849347600000328,all_graphs,sphynx_11
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,10.345577099993534,,all_graphs,sphynx_11
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.379139099997701,9.36094750000484,all_graphs,sphynx_11
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,12.900928200004046,,all_graphs,sphynx_11
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,7.962664799997583,14.542765700003656,all_graphs,sphynx_11
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.991343800000095,12.431612300002598,all_graphs,sphynx_11
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,True,True,True,9.401615099996206,12.26985150000155,all_graphs,sphynx_11
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.87433140000212,all_graphs,sphynx_11
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,7.37675209999702,8.704780899999548,all_graphs,sphynx_11
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,11.17080170000554,7.993760900004418,all_graphs,sphynx_11
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.626966799995216,8.355667900003027,all_graphs,sphynx_11
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,13.53718939999817,12.340248300002713,all_graphs,sphynx_11
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.873197900000264,5.8220101000038085,all_graphs,sphynx_11
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.208635700000741,12.26616649999778,all_graphs,sphynx_11
+sphynx_11,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,10.537678900000174,5.96907989999454,all_graphs,sphynx_11
+sphynx_11,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.157422800002678,10.165066200002912,all_graphs,sphynx_11
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,10.345577099993534,,graph_12,sphynx_11
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,12.900928200004046,,graph_12,sphynx_11
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.991343800000095,12.431612300002598,graph_12,sphynx_11
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.87433140000212,graph_12,sphynx_11
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,11.17080170000554,7.993760900004418,graph_12,sphynx_11
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,13.53718939999817,12.340248300002713,graph_12,sphynx_11
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.208635700000741,12.26616649999778,graph_12,sphynx_11
+sphynx_11,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.157422800002678,10.165066200002912,graph_12,sphynx_11
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.673819499992533,9.337264599991613,all_graphs,sphynx_12
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,7.721761499997456,,all_graphs,sphynx_12
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.614608699994278,6.575112399994396,all_graphs,sphynx_12
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.643638999986933,12.86093689998961,all_graphs,sphynx_12
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,6.231770099999267,9.314475799998036,all_graphs,sphynx_12
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,9.003073300002143,12.153796800004784,all_graphs,sphynx_12
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,5.087182999996003,6.59047610001312,all_graphs,sphynx_12
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,13.862963799997942,,all_graphs,sphynx_12
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.748065799998585,5.921307500000694,all_graphs,sphynx_12
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,10.592793699994218,8.076910599993425,all_graphs,sphynx_12
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,3.5760169999994105,6.689581099999714,all_graphs,sphynx_12
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.969774099998176,8.652800599986222,all_graphs,sphynx_12
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.485206799988987,5.943472500002827,all_graphs,sphynx_12
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.7412734999961685,8.560364600009052,all_graphs,sphynx_12
+sphynx_12,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,6.010948199997074,7.359530599991558,all_graphs,sphynx_12
+sphynx_12,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,True,3.937959300004877,13.875275899990811,all_graphs,sphynx_12
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,7.721761499997456,,graph_12,sphynx_12
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.643638999986933,12.86093689998961,graph_12,sphynx_12
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,9.003073300002143,12.153796800004784,graph_12,sphynx_12
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,13.862963799997942,,graph_12,sphynx_12
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,10.592793699994218,8.076910599993425,graph_12,sphynx_12
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.969774099998176,8.652800599986222,graph_12,sphynx_12
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.7412734999961685,8.560364600009052,graph_12,sphynx_12
+sphynx_12,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,True,3.937959300004877,13.875275899990811,graph_12,sphynx_12
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,5.789748900002451,10.085106099999393,all_graphs,sphynx_13
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.703114499992807,,all_graphs,sphynx_13
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,11.054162800006452,10.115280700003268,all_graphs,sphynx_13
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,10.16640899999743,15.985067999994499,all_graphs,sphynx_13
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,4.605343300005188,15.173131599993226,all_graphs,sphynx_13
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.787196900011622,13.33949610000127,all_graphs,sphynx_13
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,5.318983499994147,11.622728400005144,all_graphs,sphynx_13
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,11.524092899999232,,all_graphs,sphynx_13
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,3.349363999994466,6.446723500004737,all_graphs,sphynx_13
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.236029099993402,8.881286899995757,all_graphs,sphynx_13
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.293338300005416,6.233622499988996,all_graphs,sphynx_13
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.543214300007094,7.509026499989204,all_graphs,sphynx_13
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.5398224999951253,4.656237699993881,all_graphs,sphynx_13
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,5.833411200001137,9.97250509999867,all_graphs,sphynx_13
+sphynx_13,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,9.12369029999536,6.1536110999877565,all_graphs,sphynx_13
+sphynx_13,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.687940000003437,8.48487529999693,all_graphs,sphynx_13
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.703114499992807,,graph_12,sphynx_13
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,10.16640899999743,15.985067999994499,graph_12,sphynx_13
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.787196900011622,13.33949610000127,graph_12,sphynx_13
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,11.524092899999232,,graph_12,sphynx_13
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.236029099993402,8.881286899995757,graph_12,sphynx_13
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.543214300007094,7.509026499989204,graph_12,sphynx_13
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,5.833411200001137,9.97250509999867,graph_12,sphynx_13
+sphynx_13,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.687940000003437,8.48487529999693,graph_12,sphynx_13
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.60232109998492,8.788397399999667,all_graphs,sphynx_2
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.876515300013125,,all_graphs,sphynx_2
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,6.645343300013337,9.790027899987763,all_graphs,sphynx_2
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.756173100002343,14.206332799978554,all_graphs,sphynx_2
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,8.285788199980516,6.37225970000145,all_graphs,sphynx_2
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.111669400008395,14.910789199988358,all_graphs,sphynx_2
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,False,True,True,9.745906699972466,12.24953960001585,all_graphs,sphynx_2
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,12.564198599983001,17.403364500001757,all_graphs,sphynx_2
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,6.554636899993284,7.439832400006708,all_graphs,sphynx_2
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.672469500015723,10.13551200000802,all_graphs,sphynx_2
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.233993000001647,7.097128399997246,all_graphs,sphynx_2
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.353227999992669,10.31703129998641,all_graphs,sphynx_2
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.058991900004912,7.250243699993234,all_graphs,sphynx_2
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,9.662194300006377,8.575209300004644,all_graphs,sphynx_2
+sphynx_2,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.344491800002288,8.197045799985062,all_graphs,sphynx_2
+sphynx_2,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,6.884317599993665,10.408137699996587,all_graphs,sphynx_2
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.876515300013125,,graph_12,sphynx_2
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.756173100002343,14.206332799978554,graph_12,sphynx_2
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.111669400008395,14.910789199988358,graph_12,sphynx_2
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,12.564198599983001,17.403364500001757,graph_12,sphynx_2
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.672469500015723,10.13551200000802,graph_12,sphynx_2
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.353227999992669,10.31703129998641,graph_12,sphynx_2
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,9.662194300006377,8.575209300004644,graph_12,sphynx_2
+sphynx_2,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,6.884317599993665,10.408137699996587,graph_12,sphynx_2
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,False,True,False,True,,10.802178800018737,all_graphs,sphynx_3
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.071446300018806,13.86146129999537,all_graphs,sphynx_3
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,False,True,,9.820272000011983,all_graphs,sphynx_3
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,10.138962299999548,16.83228100000997,all_graphs,sphynx_3
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,False,False,False,,,all_graphs,sphynx_3
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.96718839998357,11.06344940001145,all_graphs,sphynx_3
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,False,False,,,all_graphs,sphynx_3
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,17.44004100002371,16.831037500000093,all_graphs,sphynx_3
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,6.054087299998628,6.55726489998051,all_graphs,sphynx_3
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,True,True,13.896428600012086,9.192540599993663,all_graphs,sphynx_3
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,5.509191799996188,4.613682800002152,all_graphs,sphynx_3
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,5.853715999983251,7.7227876000106335,all_graphs,sphynx_3
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.152979799982859,4.597176500014029,all_graphs,sphynx_3
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,4.938065099995583,12.94293999997899,all_graphs,sphynx_3
+sphynx_3,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.576790999999503,9.712535099999513,all_graphs,sphynx_3
+sphynx_3,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,False,3.658801300014602,,all_graphs,sphynx_3
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.071446300018806,13.86146129999537,graph_12,sphynx_3
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,10.138962299999548,16.83228100000997,graph_12,sphynx_3
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.96718839998357,11.06344940001145,graph_12,sphynx_3
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,17.44004100002371,16.831037500000093,graph_12,sphynx_3
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,True,True,13.896428600012086,9.192540599993663,graph_12,sphynx_3
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,5.853715999983251,7.7227876000106335,graph_12,sphynx_3
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,4.938065099995583,12.94293999997899,graph_12,sphynx_3
+sphynx_3,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,False,3.658801300014602,,graph_12,sphynx_3
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,4.688712600000372,10.903302400001849,all_graphs,sphynx_4
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,9.827862699999969,,all_graphs,sphynx_4
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,6.124457300000415,14.675405900001579,all_graphs,sphynx_4
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,10.184675600001128,,all_graphs,sphynx_4
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,False,True,True,3.456214899997576,9.27644349999899,all_graphs,sphynx_4
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,6.9273761000004015,15.366704299998673,all_graphs,sphynx_4
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,False,10.402087599999504,,all_graphs,sphynx_4
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,10.084616800002777,16.26341539999703,all_graphs,sphynx_4
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.650981499998352,5.279748700002472,all_graphs,sphynx_4
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.739832199997181,9.197192699997686,all_graphs,sphynx_4
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.901255599997739,8.587897599998541,all_graphs,sphynx_4
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.832855199998448,11.81676499999935,all_graphs,sphynx_4
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.739964399999735,6.000673499998584,all_graphs,sphynx_4
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,17.788640400001896,9.561472999997932,all_graphs,sphynx_4
+sphynx_4,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,4.668639800001955,7.786333499999955,all_graphs,sphynx_4
+sphynx_4,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.689983200001734,12.760873100000026,all_graphs,sphynx_4
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,9.827862699999969,,graph_12,sphynx_4
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,10.184675600001128,,graph_12,sphynx_4
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,6.9273761000004015,15.366704299998673,graph_12,sphynx_4
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,10.084616800002777,16.26341539999703,graph_12,sphynx_4
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.739832199997181,9.197192699997686,graph_12,sphynx_4
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.832855199998448,11.81676499999935,graph_12,sphynx_4
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,17.788640400001896,9.561472999997932,graph_12,sphynx_4
+sphynx_4,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.689983200001734,12.760873100000026,graph_12,sphynx_4
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,False,True,True,8.452713400009088,15.419517899979837,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,8.256089200032875,,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,True,True,13.167756999959238,12.516567500017118,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,12.939254199969582,17.455420200014487,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.0193700000527315,14.109551200002898,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.782949000015378,12.096031199966092,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,7.758879799977876,10.753024199977745,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,6.038059799990151,17.410489099973347,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.630367500008788,7.87916089995997,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.119404400000349,8.792854300001636,all_graphs,sphynx_5_1
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.774466699978802,8.37179860001197,all_graphs,sphynx_5_1
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.537922100047581,11.784746799967252,all_graphs,sphynx_5_1
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.6869736000080593,5.756715500028804,all_graphs,sphynx_5_1
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,8.29727829998592,11.212931799993441,all_graphs,sphynx_5_1
+sphynx_5_1,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.525396600016393,8.582962899992708,all_graphs,sphynx_5_1
+sphynx_5_1,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.5634161999914795,12.840670600009616,all_graphs,sphynx_5_1
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,8.256089200032875,,graph_12,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,12.939254199969582,17.455420200014487,graph_12,sphynx_5_1
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.782949000015378,12.096031199966092,graph_12,sphynx_5_1
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,6.038059799990151,17.410489099973347,graph_12,sphynx_5_1
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.119404400000349,8.792854300001636,graph_12,sphynx_5_1
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.537922100047581,11.784746799967252,graph_12,sphynx_5_1
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,8.29727829998592,11.212931799993441,graph_12,sphynx_5_1
+sphynx_5_1,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.5634161999914795,12.840670600009616,graph_12,sphynx_5_1
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.162537499971677,8.154577999957723,all_graphs,sphynx_6
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,15.48857129999692,,all_graphs,sphynx_6
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.774854299961589,9.544537899957504,all_graphs,sphynx_6
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,8.426789999997709,15.085970100015402,all_graphs,sphynx_6
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,False,True,False,7.271509899991088,,all_graphs,sphynx_6
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,False,6.702839900041226,,all_graphs,sphynx_6
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,False,True,True,7.240755199978594,13.74389829998836,all_graphs,sphynx_6
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,10.968981399957556,14.390112900000531,all_graphs,sphynx_6
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,3.014607099990826,5.116084100038279,all_graphs,sphynx_6
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,12.185809899994865,8.27312490000645,all_graphs,sphynx_6
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,3.856009500043001,5.734757900004979,all_graphs,sphynx_6
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,4.87171410000883,7.79244170000311,all_graphs,sphynx_6
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.546504600031767,5.186824699980207,all_graphs,sphynx_6
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,10.002059400023427,7.979547700029798,all_graphs,sphynx_6
+sphynx_6,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,4.826234399981331,6.643763000029139,all_graphs,sphynx_6
+sphynx_6,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,2.5356824999907985,8.573679599969182,all_graphs,sphynx_6
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,15.48857129999692,,graph_12,sphynx_6
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,8.426789999997709,15.085970100015402,graph_12,sphynx_6
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,False,6.702839900041226,,graph_12,sphynx_6
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,10.968981399957556,14.390112900000531,graph_12,sphynx_6
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,12.185809899994865,8.27312490000645,graph_12,sphynx_6
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,4.87171410000883,7.79244170000311,graph_12,sphynx_6
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,10.002059400023427,7.979547700029798,graph_12,sphynx_6
+sphynx_6,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,2.5356824999907985,8.573679599969182,graph_12,sphynx_6
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,9.41124090005178,13.216191000072286,all_graphs,sphynx_7
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,11.682665199972917,,all_graphs,sphynx_7
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,8.827214699937088,11.652063400018733,all_graphs,sphynx_7
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,True,10.503727799980197,14.525946100009605,all_graphs,sphynx_7
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.885381500003859,7.525649100076411,all_graphs,sphynx_7
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.885693400050741,15.553835900034755,all_graphs,sphynx_7
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,True,True,True,10.090365300071198,15.40888140001357,all_graphs,sphynx_7
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,16.557367599918734,17.724028199911118,all_graphs,sphynx_7
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,11.05755189992442,8.457249000086449,all_graphs,sphynx_7
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,6.935688599943887,17.867076199967414,all_graphs,sphynx_7
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.4522039999717435,8.13975630002119,all_graphs,sphynx_7
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.708463200018741,9.509407700039219,all_graphs,sphynx_7
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.5211013000226785,5.997240900062025,all_graphs,sphynx_7
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,3.9864214999834076,10.377273299964145,all_graphs,sphynx_7
+sphynx_7,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.200385200092569,5.637653300072998,all_graphs,sphynx_7
+sphynx_7,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.8190305000171065,8.920582200051513,all_graphs,sphynx_7
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,11.682665199972917,,graph_12,sphynx_7
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,True,10.503727799980197,14.525946100009605,graph_12,sphynx_7
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.885693400050741,15.553835900034755,graph_12,sphynx_7
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,16.557367599918734,17.724028199911118,graph_12,sphynx_7
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,6.935688599943887,17.867076199967414,graph_12,sphynx_7
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.708463200018741,9.509407700039219,graph_12,sphynx_7
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,3.9864214999834076,10.377273299964145,graph_12,sphynx_7
+sphynx_7,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.8190305000171065,8.920582200051513,graph_12,sphynx_7
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,False,True,False,7.952205399982859,,all_graphs,sphynx_8
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,11.836828599916771,,all_graphs,sphynx_8
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,True,True,4.835247999988496,11.258821499999613,all_graphs,sphynx_8
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.354163500014465,9.921588700031862,all_graphs,sphynx_8
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.204018399934284,8.462326999986544,all_graphs,sphynx_8
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,5.210109399981093,10.981886200024746,all_graphs,sphynx_8
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,True,True,True,7.030801999964524,17.22813379997433,all_graphs,sphynx_8
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.153693499974892,all_graphs,sphynx_8
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,False,True,True,5.361024699989002,14.894315000041388,all_graphs,sphynx_8
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,False,True,,7.122654200065881,all_graphs,sphynx_8
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.658822899917141,6.599052099976916,all_graphs,sphynx_8
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.883305100025609,8.341704600024968,all_graphs,sphynx_8
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.5489026999565567,11.497213899972849,all_graphs,sphynx_8
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.332011800026521,7.85296570009092,all_graphs,sphynx_8
+sphynx_8,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,6.581431200029357,6.293176100007031,all_graphs,sphynx_8
+sphynx_8,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.20621019997634,8.30670720001217,all_graphs,sphynx_8
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,11.836828599916771,,graph_12,sphynx_8
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.354163500014465,9.921588700031862,graph_12,sphynx_8
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,5.210109399981093,10.981886200024746,graph_12,sphynx_8
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.153693499974892,graph_12,sphynx_8
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,False,True,,7.122654200065881,graph_12,sphynx_8
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.883305100025609,8.341704600024968,graph_12,sphynx_8
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.332011800026521,7.85296570009092,graph_12,sphynx_8
+sphynx_8,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.20621019997634,8.30670720001217,graph_12,sphynx_8
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,8.752511199912988,10.17673420009669,all_graphs,sphynx_9
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.270975999999791,15.188307799980976,all_graphs,sphynx_9
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,9.311403000028747,11.136211200035177,all_graphs,sphynx_9
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.57942089997232,14.535071399994195,all_graphs,sphynx_9
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,11.346872799913399,13.320028999936753,all_graphs,sphynx_9
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,False,False,True,True,14.730489199980866,12.017123900004663,all_graphs,sphynx_9
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,False,9.459523799945373,,all_graphs,sphynx_9
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,False,,,all_graphs,sphynx_9
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,False,True,True,True,11.884171199985076,8.087523699970859,all_graphs,sphynx_9
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,16.63998459989648,9.528137599932961,all_graphs,sphynx_9
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.355514099937864,7.538347900030203,all_graphs,sphynx_9
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,7.293533600051887,8.803207400022075,all_graphs,sphynx_9
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.8712113000220825,9.115920499898266,all_graphs,sphynx_9
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.544477500021458,11.855241699959151,all_graphs,sphynx_9
+sphynx_9,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.317995899938978,12.765856300014775,all_graphs,sphynx_9
+sphynx_9,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.959905199939385,11.802606199984666,all_graphs,sphynx_9
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.270975999999791,15.188307799980976,graph_12,sphynx_9
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.57942089997232,14.535071399994195,graph_12,sphynx_9
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,False,False,True,True,14.730489199980866,12.017123900004663,graph_12,sphynx_9
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,False,,,graph_12,sphynx_9
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,16.63998459989648,9.528137599932961,graph_12,sphynx_9
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,7.293533600051887,8.803207400022075,graph_12,sphynx_9
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.544477500021458,11.855241699959151,graph_12,sphynx_9
+sphynx_9,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.959905199939385,11.802606199984666,graph_12,sphynx_9
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,12.004757099901553,8.041661600000225,all_graphs,trial_1_3
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,13.376578200026415,,all_graphs,trial_1_3
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,10.85624330001886,13.006398900062777,all_graphs,trial_1_3
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,9.127351900096755,12.018971299985424,all_graphs,trial_1_3
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.162614000029862,10.839995999936953,all_graphs,trial_1_3
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.210942400037311,16.3933481000131,all_graphs,trial_1_3
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,15.157436799956486,16.255810400005203,all_graphs,trial_1_3
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,True,True,True,14.477184999967221,16.625188900041394,all_graphs,trial_1_3
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,False,True,True,True,11.391644599964138,4.591941899969299,all_graphs,trial_1_3
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,10.191787100047804,9.537237100070342,all_graphs,trial_1_3
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,5.457669300027192,4.294936400023062,all_graphs,trial_1_3
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.813828999991529,7.938399899983779,all_graphs,trial_1_3
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.8612077001017724,4.536632600007579,all_graphs,trial_1_3
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.130747099989094,9.027584800031036,all_graphs,trial_1_3
+trial_1_3,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.431881999946199,5.879417099989951,all_graphs,trial_1_3
+trial_1_3,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.209264600067399,8.895183400018595,all_graphs,trial_1_3
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,13.376578200026415,,graph_12,trial_1_3
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,9.127351900096755,12.018971299985424,graph_12,trial_1_3
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.210942400037311,16.3933481000131,graph_12,trial_1_3
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,True,True,True,14.477184999967221,16.625188900041394,graph_12,trial_1_3
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,10.191787100047804,9.537237100070342,graph_12,trial_1_3
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.813828999991529,7.938399899983779,graph_12,trial_1_3
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.130747099989094,9.027584800031036,graph_12,trial_1_3
+trial_1_3,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.209264600067399,8.895183400018595,graph_12,trial_1_3
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,6.751677400000062,8.261648900000182,all_graphs,pooled
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,10.562999999999874,,all_graphs,pooled
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.615807199999779,9.32948220000003,all_graphs,pooled
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.79705630000035,13.007078000000092,all_graphs,pooled
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,6.835718799999995,10.23614760000008,all_graphs,pooled
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,8.038371199999801,9.103411900000083,all_graphs,pooled
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,10.776037299999643,12.083571200000279,all_graphs,pooled
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,False,10.458341399999881,,all_graphs,pooled
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,4.164370899999994,6.603018699999723,all_graphs,pooled
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.297043300000041,17.858796399999846,all_graphs,pooled
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.488640400000122,6.103887700000541,all_graphs,pooled
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.536737299999913,9.770571599999812,all_graphs,pooled
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.996012700000051,5.727022399999896,all_graphs,pooled
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,11.89308740000024,9.512932300000102,all_graphs,pooled
+sphynx_10,How many nodes have TLP:GREEN?,6,1,True,True,False,True,True,True,14.780710800000207,6.299540400000069,all_graphs,pooled
+sphynx_10,How many nodes have TLP:GREEN?,12,1,True,True,False,True,True,True,6.12086249999993,11.17017480000004,all_graphs,pooled
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,9.221789299997909,7.849347600000328,all_graphs,pooled
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,10.345577099993534,,all_graphs,pooled
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.379139099997701,9.36094750000484,all_graphs,pooled
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,12.900928200004046,,all_graphs,pooled
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,7.962664799997583,14.542765700003656,all_graphs,pooled
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.991343800000095,12.431612300002598,all_graphs,pooled
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,True,True,True,9.401615099996206,12.26985150000155,all_graphs,pooled
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.87433140000212,all_graphs,pooled
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,7.37675209999702,8.704780899999548,all_graphs,pooled
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,11.17080170000554,7.993760900004418,all_graphs,pooled
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.626966799995216,8.355667900003027,all_graphs,pooled
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,13.53718939999817,12.340248300002713,all_graphs,pooled
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.873197900000264,5.8220101000038085,all_graphs,pooled
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.208635700000741,12.26616649999778,all_graphs,pooled
+sphynx_11,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,10.537678900000174,5.96907989999454,all_graphs,pooled
+sphynx_11,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.157422800002678,10.165066200002912,all_graphs,pooled
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.673819499992533,9.337264599991613,all_graphs,pooled
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,7.721761499997456,,all_graphs,pooled
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.614608699994278,6.575112399994396,all_graphs,pooled
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.643638999986933,12.86093689998961,all_graphs,pooled
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,6.231770099999267,9.314475799998036,all_graphs,pooled
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,9.003073300002143,12.153796800004784,all_graphs,pooled
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,5.087182999996003,6.59047610001312,all_graphs,pooled
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,13.862963799997942,,all_graphs,pooled
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.748065799998585,5.921307500000694,all_graphs,pooled
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,10.592793699994218,8.076910599993425,all_graphs,pooled
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,3.5760169999994105,6.689581099999714,all_graphs,pooled
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.969774099998176,8.652800599986222,all_graphs,pooled
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.485206799988987,5.943472500002827,all_graphs,pooled
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.7412734999961685,8.560364600009052,all_graphs,pooled
+sphynx_12,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,6.010948199997074,7.359530599991558,all_graphs,pooled
+sphynx_12,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,True,3.937959300004877,13.875275899990811,all_graphs,pooled
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,5.789748900002451,10.085106099999393,all_graphs,pooled
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.703114499992807,,all_graphs,pooled
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,11.054162800006452,10.115280700003268,all_graphs,pooled
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,10.16640899999743,15.985067999994499,all_graphs,pooled
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,4.605343300005188,15.173131599993226,all_graphs,pooled
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.787196900011622,13.33949610000127,all_graphs,pooled
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,5.318983499994147,11.622728400005144,all_graphs,pooled
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,11.524092899999232,,all_graphs,pooled
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,3.349363999994466,6.446723500004737,all_graphs,pooled
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.236029099993402,8.881286899995757,all_graphs,pooled
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.293338300005416,6.233622499988996,all_graphs,pooled
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.543214300007094,7.509026499989204,all_graphs,pooled
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.5398224999951253,4.656237699993881,all_graphs,pooled
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,5.833411200001137,9.97250509999867,all_graphs,pooled
+sphynx_13,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,9.12369029999536,6.1536110999877565,all_graphs,pooled
+sphynx_13,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.687940000003437,8.48487529999693,all_graphs,pooled
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.60232109998492,8.788397399999667,all_graphs,pooled
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.876515300013125,,all_graphs,pooled
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,6.645343300013337,9.790027899987763,all_graphs,pooled
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.756173100002343,14.206332799978554,all_graphs,pooled
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,8.285788199980516,6.37225970000145,all_graphs,pooled
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.111669400008395,14.910789199988358,all_graphs,pooled
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,False,True,True,9.745906699972466,12.24953960001585,all_graphs,pooled
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,12.564198599983001,17.403364500001757,all_graphs,pooled
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,6.554636899993284,7.439832400006708,all_graphs,pooled
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.672469500015723,10.13551200000802,all_graphs,pooled
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.233993000001647,7.097128399997246,all_graphs,pooled
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.353227999992669,10.31703129998641,all_graphs,pooled
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.058991900004912,7.250243699993234,all_graphs,pooled
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,9.662194300006377,8.575209300004644,all_graphs,pooled
+sphynx_2,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.344491800002288,8.197045799985062,all_graphs,pooled
+sphynx_2,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,6.884317599993665,10.408137699996587,all_graphs,pooled
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,False,True,False,True,,10.802178800018737,all_graphs,pooled
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.071446300018806,13.86146129999537,all_graphs,pooled
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,False,True,,9.820272000011983,all_graphs,pooled
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,10.138962299999548,16.83228100000997,all_graphs,pooled
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,False,False,False,,,all_graphs,pooled
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.96718839998357,11.06344940001145,all_graphs,pooled
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,False,False,,,all_graphs,pooled
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,17.44004100002371,16.831037500000093,all_graphs,pooled
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,6.054087299998628,6.55726489998051,all_graphs,pooled
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,True,True,13.896428600012086,9.192540599993663,all_graphs,pooled
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,5.509191799996188,4.613682800002152,all_graphs,pooled
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,5.853715999983251,7.7227876000106335,all_graphs,pooled
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.152979799982859,4.597176500014029,all_graphs,pooled
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,4.938065099995583,12.94293999997899,all_graphs,pooled
+sphynx_3,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.576790999999503,9.712535099999513,all_graphs,pooled
+sphynx_3,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,False,3.658801300014602,,all_graphs,pooled
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,4.688712600000372,10.903302400001849,all_graphs,pooled
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,9.827862699999969,,all_graphs,pooled
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,6.124457300000415,14.675405900001579,all_graphs,pooled
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,10.184675600001128,,all_graphs,pooled
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,False,True,True,3.456214899997576,9.27644349999899,all_graphs,pooled
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,6.9273761000004015,15.366704299998673,all_graphs,pooled
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,False,10.402087599999504,,all_graphs,pooled
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,10.084616800002777,16.26341539999703,all_graphs,pooled
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.650981499998352,5.279748700002472,all_graphs,pooled
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.739832199997181,9.197192699997686,all_graphs,pooled
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.901255599997739,8.587897599998541,all_graphs,pooled
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.832855199998448,11.81676499999935,all_graphs,pooled
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.739964399999735,6.000673499998584,all_graphs,pooled
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,17.788640400001896,9.561472999997932,all_graphs,pooled
+sphynx_4,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,4.668639800001955,7.786333499999955,all_graphs,pooled
+sphynx_4,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.689983200001734,12.760873100000026,all_graphs,pooled
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,False,True,True,8.452713400009088,15.419517899979837,all_graphs,pooled
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,8.256089200032875,,all_graphs,pooled
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,True,True,13.167756999959238,12.516567500017118,all_graphs,pooled
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,12.939254199969582,17.455420200014487,all_graphs,pooled
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.0193700000527315,14.109551200002898,all_graphs,pooled
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.782949000015378,12.096031199966092,all_graphs,pooled
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,7.758879799977876,10.753024199977745,all_graphs,pooled
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,6.038059799990151,17.410489099973347,all_graphs,pooled
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,5.630367500008788,7.87916089995997,all_graphs,pooled
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.119404400000349,8.792854300001636,all_graphs,pooled
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.774466699978802,8.37179860001197,all_graphs,pooled
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.537922100047581,11.784746799967252,all_graphs,pooled
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.6869736000080593,5.756715500028804,all_graphs,pooled
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,8.29727829998592,11.212931799993441,all_graphs,pooled
+sphynx_5_1,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.525396600016393,8.582962899992708,all_graphs,pooled
+sphynx_5_1,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.5634161999914795,12.840670600009616,all_graphs,pooled
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,7.162537499971677,8.154577999957723,all_graphs,pooled
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,15.48857129999692,,all_graphs,pooled
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,7.774854299961589,9.544537899957504,all_graphs,pooled
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,8.426789999997709,15.085970100015402,all_graphs,pooled
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,False,True,False,7.271509899991088,,all_graphs,pooled
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,False,6.702839900041226,,all_graphs,pooled
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,False,True,True,7.240755199978594,13.74389829998836,all_graphs,pooled
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,10.968981399957556,14.390112900000531,all_graphs,pooled
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,3.014607099990826,5.116084100038279,all_graphs,pooled
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,12.185809899994865,8.27312490000645,all_graphs,pooled
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,3.856009500043001,5.734757900004979,all_graphs,pooled
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,4.87171410000883,7.79244170000311,all_graphs,pooled
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.546504600031767,5.186824699980207,all_graphs,pooled
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,10.002059400023427,7.979547700029798,all_graphs,pooled
+sphynx_6,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,4.826234399981331,6.643763000029139,all_graphs,pooled
+sphynx_6,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,2.5356824999907985,8.573679599969182,all_graphs,pooled
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,9.41124090005178,13.216191000072286,all_graphs,pooled
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,11.682665199972917,,all_graphs,pooled
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,8.827214699937088,11.652063400018733,all_graphs,pooled
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,True,10.503727799980197,14.525946100009605,all_graphs,pooled
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.885381500003859,7.525649100076411,all_graphs,pooled
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.885693400050741,15.553835900034755,all_graphs,pooled
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,True,True,True,10.090365300071198,15.40888140001357,all_graphs,pooled
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,16.557367599918734,17.724028199911118,all_graphs,pooled
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,True,True,True,11.05755189992442,8.457249000086449,all_graphs,pooled
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,6.935688599943887,17.867076199967414,all_graphs,pooled
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,4.4522039999717435,8.13975630002119,all_graphs,pooled
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.708463200018741,9.509407700039219,all_graphs,pooled
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,3.5211013000226785,5.997240900062025,all_graphs,pooled
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,3.9864214999834076,10.377273299964145,all_graphs,pooled
+sphynx_7,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.200385200092569,5.637653300072998,all_graphs,pooled
+sphynx_7,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.8190305000171065,8.920582200051513,all_graphs,pooled
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,False,True,False,7.952205399982859,,all_graphs,pooled
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,11.836828599916771,,all_graphs,pooled
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,False,True,True,True,4.835247999988496,11.258821499999613,all_graphs,pooled
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.354163500014465,9.921588700031862,all_graphs,pooled
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.204018399934284,8.462326999986544,all_graphs,pooled
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,5.210109399981093,10.981886200024746,all_graphs,pooled
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,True,True,True,True,7.030801999964524,17.22813379997433,all_graphs,pooled
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.153693499974892,all_graphs,pooled
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,True,False,True,True,5.361024699989002,14.894315000041388,all_graphs,pooled
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,False,True,,7.122654200065881,all_graphs,pooled
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.658822899917141,6.599052099976916,all_graphs,pooled
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.883305100025609,8.341704600024968,all_graphs,pooled
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.5489026999565567,11.497213899972849,all_graphs,pooled
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.332011800026521,7.85296570009092,all_graphs,pooled
+sphynx_8,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,6.581431200029357,6.293176100007031,all_graphs,pooled
+sphynx_8,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.20621019997634,8.30670720001217,all_graphs,pooled
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,8.752511199912988,10.17673420009669,all_graphs,pooled
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.270975999999791,15.188307799980976,all_graphs,pooled
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,9.311403000028747,11.136211200035177,all_graphs,pooled
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.57942089997232,14.535071399994195,all_graphs,pooled
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,False,True,True,True,11.346872799913399,13.320028999936753,all_graphs,pooled
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,False,False,True,True,14.730489199980866,12.017123900004663,all_graphs,pooled
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,False,9.459523799945373,,all_graphs,pooled
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,False,,,all_graphs,pooled
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,False,True,True,True,11.884171199985076,8.087523699970859,all_graphs,pooled
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,16.63998459989648,9.528137599932961,all_graphs,pooled
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,6.355514099937864,7.538347900030203,all_graphs,pooled
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,7.293533600051887,8.803207400022075,all_graphs,pooled
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,4.8712113000220825,9.115920499898266,all_graphs,pooled
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.544477500021458,11.855241699959151,all_graphs,pooled
+sphynx_9,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.317995899938978,12.765856300014775,all_graphs,pooled
+sphynx_9,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.959905199939385,11.802606199984666,all_graphs,pooled
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,6,2,True,True,True,True,True,True,12.004757099901553,8.041661600000225,all_graphs,pooled
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,13.376578200026415,,all_graphs,pooled
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,6,2,True,True,True,True,True,True,10.85624330001886,13.006398900062777,all_graphs,pooled
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,9.127351900096755,12.018971299985424,all_graphs,pooled
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),6,2,True,True,True,True,True,True,5.162614000029862,10.839995999936953,all_graphs,pooled
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.210942400037311,16.3933481000131,all_graphs,pooled
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,6,2,True,True,False,False,True,True,15.157436799956486,16.255810400005203,all_graphs,pooled
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,True,True,True,14.477184999967221,16.625188900041394,all_graphs,pooled
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),6,1,True,True,False,True,True,True,11.391644599964138,4.591941899969299,all_graphs,pooled
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,10.191787100047804,9.537237100070342,all_graphs,pooled
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,6,1,True,True,True,True,True,True,5.457669300027192,4.294936400023062,all_graphs,pooled
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.813828999991529,7.938399899983779,all_graphs,pooled
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,6,1,True,True,True,True,True,True,2.8612077001017724,4.536632600007579,all_graphs,pooled
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.130747099989094,9.027584800031036,all_graphs,pooled
+trial_1_3,How many nodes have TLP:GREEN?,6,1,True,True,True,True,True,True,5.431881999946199,5.879417099989951,all_graphs,pooled
+trial_1_3,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.209264600067399,8.895183400018595,all_graphs,pooled
+sphynx_10,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,10.562999999999874,,graph_12,pooled
+sphynx_10,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.79705630000035,13.007078000000092,graph_12,pooled
+sphynx_10,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,8.038371199999801,9.103411900000083,graph_12,pooled
+sphynx_10,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,False,10.458341399999881,,graph_12,pooled
+sphynx_10,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.297043300000041,17.858796399999846,graph_12,pooled
+sphynx_10,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.536737299999913,9.770571599999812,graph_12,pooled
+sphynx_10,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,11.89308740000024,9.512932300000102,graph_12,pooled
+sphynx_10,How many nodes have TLP:GREEN?,12,1,True,True,False,True,True,True,6.12086249999993,11.17017480000004,graph_12,pooled
+sphynx_11,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,10.345577099993534,,graph_12,pooled
+sphynx_11,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,12.900928200004046,,graph_12,pooled
+sphynx_11,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.991343800000095,12.431612300002598,graph_12,pooled
+sphynx_11,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.87433140000212,graph_12,pooled
+sphynx_11,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,11.17080170000554,7.993760900004418,graph_12,pooled
+sphynx_11,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,13.53718939999817,12.340248300002713,graph_12,pooled
+sphynx_11,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.208635700000741,12.26616649999778,graph_12,pooled
+sphynx_11,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.157422800002678,10.165066200002912,graph_12,pooled
+sphynx_12,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,7.721761499997456,,graph_12,pooled
+sphynx_12,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.643638999986933,12.86093689998961,graph_12,pooled
+sphynx_12,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,9.003073300002143,12.153796800004784,graph_12,pooled
+sphynx_12,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,13.862963799997942,,graph_12,pooled
+sphynx_12,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,10.592793699994218,8.076910599993425,graph_12,pooled
+sphynx_12,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.969774099998176,8.652800599986222,graph_12,pooled
+sphynx_12,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.7412734999961685,8.560364600009052,graph_12,pooled
+sphynx_12,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,True,3.937959300004877,13.875275899990811,graph_12,pooled
+sphynx_13,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.703114499992807,,graph_12,pooled
+sphynx_13,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,10.16640899999743,15.985067999994499,graph_12,pooled
+sphynx_13,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.787196900011622,13.33949610000127,graph_12,pooled
+sphynx_13,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,False,11.524092899999232,,graph_12,pooled
+sphynx_13,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.236029099993402,8.881286899995757,graph_12,pooled
+sphynx_13,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,8.543214300007094,7.509026499989204,graph_12,pooled
+sphynx_13,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,5.833411200001137,9.97250509999867,graph_12,pooled
+sphynx_13,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.687940000003437,8.48487529999693,graph_12,pooled
+sphynx_2,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,8.876515300013125,,graph_12,pooled
+sphynx_2,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,11.756173100002343,14.206332799978554,graph_12,pooled
+sphynx_2,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,8.111669400008395,14.910789199988358,graph_12,pooled
+sphynx_2,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,12.564198599983001,17.403364500001757,graph_12,pooled
+sphynx_2,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.672469500015723,10.13551200000802,graph_12,pooled
+sphynx_2,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.353227999992669,10.31703129998641,graph_12,pooled
+sphynx_2,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,9.662194300006377,8.575209300004644,graph_12,pooled
+sphynx_2,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,6.884317599993665,10.408137699996587,graph_12,pooled
+sphynx_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.071446300018806,13.86146129999537,graph_12,pooled
+sphynx_3,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,10.138962299999548,16.83228100000997,graph_12,pooled
+sphynx_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,5.96718839998357,11.06344940001145,graph_12,pooled
+sphynx_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,17.44004100002371,16.831037500000093,graph_12,pooled
+sphynx_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,True,True,13.896428600012086,9.192540599993663,graph_12,pooled
+sphynx_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,False,True,True,True,5.853715999983251,7.7227876000106335,graph_12,pooled
+sphynx_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,4.938065099995583,12.94293999997899,graph_12,pooled
+sphynx_3,How many nodes have TLP:GREEN?,12,1,True,True,True,False,True,False,3.658801300014602,,graph_12,pooled
+sphynx_4,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,9.827862699999969,,graph_12,pooled
+sphynx_4,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,False,10.184675600001128,,graph_12,pooled
+sphynx_4,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,6.9273761000004015,15.366704299998673,graph_12,pooled
+sphynx_4,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,10.084616800002777,16.26341539999703,graph_12,pooled
+sphynx_4,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,9.739832199997181,9.197192699997686,graph_12,pooled
+sphynx_4,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.832855199998448,11.81676499999935,graph_12,pooled
+sphynx_4,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,17.788640400001896,9.561472999997932,graph_12,pooled
+sphynx_4,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.689983200001734,12.760873100000026,graph_12,pooled
+sphynx_5_1,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,8.256089200032875,,graph_12,pooled
+sphynx_5_1,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,12.939254199969582,17.455420200014487,graph_12,pooled
+sphynx_5_1,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.782949000015378,12.096031199966092,graph_12,pooled
+sphynx_5_1,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,6.038059799990151,17.410489099973347,graph_12,pooled
+sphynx_5_1,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,8.119404400000349,8.792854300001636,graph_12,pooled
+sphynx_5_1,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.537922100047581,11.784746799967252,graph_12,pooled
+sphynx_5_1,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,8.29727829998592,11.212931799993441,graph_12,pooled
+sphynx_5_1,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,4.5634161999914795,12.840670600009616,graph_12,pooled
+sphynx_6,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,15.48857129999692,,graph_12,pooled
+sphynx_6,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,8.426789999997709,15.085970100015402,graph_12,pooled
+sphynx_6,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,False,6.702839900041226,,graph_12,pooled
+sphynx_6,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,False,True,True,10.968981399957556,14.390112900000531,graph_12,pooled
+sphynx_6,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,12.185809899994865,8.27312490000645,graph_12,pooled
+sphynx_6,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,4.87171410000883,7.79244170000311,graph_12,pooled
+sphynx_6,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,10.002059400023427,7.979547700029798,graph_12,pooled
+sphynx_6,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,2.5356824999907985,8.573679599969182,graph_12,pooled
+sphynx_7,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,False,False,True,False,11.682665199972917,,graph_12,pooled
+sphynx_7,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,False,False,True,True,10.503727799980197,14.525946100009605,graph_12,pooled
+sphynx_7,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.885693400050741,15.553835900034755,graph_12,pooled
+sphynx_7,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,True,True,16.557367599918734,17.724028199911118,graph_12,pooled
+sphynx_7,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,6.935688599943887,17.867076199967414,graph_12,pooled
+sphynx_7,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.708463200018741,9.509407700039219,graph_12,pooled
+sphynx_7,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,3.9864214999834076,10.377273299964145,graph_12,pooled
+sphynx_7,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,3.8190305000171065,8.920582200051513,graph_12,pooled
+sphynx_8,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,11.836828599916771,,graph_12,pooled
+sphynx_8,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.354163500014465,9.921588700031862,graph_12,pooled
+sphynx_8,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,False,True,True,5.210109399981093,10.981886200024746,graph_12,pooled
+sphynx_8,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,True,,15.153693499974892,graph_12,pooled
+sphynx_8,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,False,True,False,True,,7.122654200065881,graph_12,pooled
+sphynx_8,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,6.883305100025609,8.341704600024968,graph_12,pooled
+sphynx_8,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.332011800026521,7.85296570009092,graph_12,pooled
+sphynx_8,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.20621019997634,8.30670720001217,graph_12,pooled
+sphynx_9,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,True,9.270975999999791,15.188307799980976,graph_12,pooled
+sphynx_9,Count the number of MALWARE nodes connected with at least 1 high confidence edge ( confidence 7-10).,12,2,True,True,True,False,True,True,8.57942089997232,14.535071399994195,graph_12,pooled
+sphynx_9,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,False,False,True,True,14.730489199980866,12.017123900004663,graph_12,pooled
+sphynx_9,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,False,False,False,False,,,graph_12,pooled
+sphynx_9,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,True,True,True,16.63998459989648,9.528137599932961,graph_12,pooled
+sphynx_9,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,7.293533600051887,8.803207400022075,graph_12,pooled
+sphynx_9,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,False,True,True,5.544477500021458,11.855241699959151,graph_12,pooled
+sphynx_9,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.959905199939385,11.802606199984666,graph_12,pooled
+trial_1_3,Count the number of ATTACK PATTERN nodes connected with at least 1 low confidence edge? (confidence of 1-3).,12,2,True,True,True,False,True,False,13.376578200026415,,graph_12,pooled
+trial_1_3,Count the number of MALWARE nodes connected with at least 1 with a high confidence edge ( confidence 7-10).,12,2,True,True,True,True,True,True,9.127351900096755,12.018971299985424,graph_12,pooled
+trial_1_3,Count the number of MALWARE nodes with high connection counts (node size 7-10),12,2,True,True,True,True,True,True,7.210942400037311,16.3933481000131,graph_12,pooled
+trial_1_3,Count the number of nodes with TLP:RED connected to at least 1 node with high connection count (node size 7-10).,12,2,True,True,True,True,True,True,14.477184999967221,16.625188900041394,graph_12,pooled
+trial_1_3,Count the number of nodes with high connection counts (node size 7-10),12,1,True,True,True,False,True,True,10.191787100047804,9.537237100070342,graph_12,pooled
+trial_1_3,How many CYBER OBSERVABLE nodes are in the graph?,12,1,True,True,True,True,True,True,5.813828999991529,7.938399899983779,graph_12,pooled
+trial_1_3,How many low confidence (confidence 1-3) edges exist in the graph?,12,1,True,True,True,True,True,True,6.130747099989094,9.027584800031036,graph_12,pooled
+trial_1_3,How many nodes have TLP:GREEN?,12,1,True,True,True,True,True,True,5.209264600067399,8.895183400018595,graph_12,pooled
