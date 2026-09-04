@@ -33,6 +33,11 @@ The analysis flow is: behavioural analysis → multimodal ISC across conditions 
 
 ---
 
+# Important: Added a brief slide-deck summarizing the results.
+Can be found inside analysis folder
+
+
+
 ## Tools & Authorship
 
 Analysis scripts were created using [Cursor](https://www.cursor.com/) and curated by the author. Report and documentation files were also organised and improved in clarity with Cursor assistance, then reviewed and curated manually.
