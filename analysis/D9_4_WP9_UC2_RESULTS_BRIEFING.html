@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="slides-format" content="viewport">
+  <title>WP9 UC2 — Evaluation Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-bg: #0b0f12;
+      --color-bg-deep: #060809;
+      --color-surface: #13191d;
+      --color-text: #e7f5ea;
+      --color-text-secondary: #b8d2bf;
+      --color-text-muted: #7fa08a;
+      --color-accent-1: #00ff41;
+      --color-accent-2: #34d399;
+      --color-accent-3: #f59e0b;
+      --color-glass-bg: rgba(0,255,65,0.05);
+      --color-glass-border: rgba(0,255,65,0.12);
+      --color-vignette: rgba(0,0,0,0.45);
+      --font-display: 'JetBrains Mono', monospace;
+      --font-body: 'Inter', sans-serif;
+    }
+  </style>
+  <style>
+    :root { --color-bg: #0b0f12; --color-text: #e7f5ea; --glow-color-rgb: 0,255,65; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { background: var(--color-bg); margin: 0; }
+    body { font-family: var(--font-body); color: var(--color-text); overflow: hidden; height: 100vh; width: 100vw; }
+    .deck { width: 100vw; height: 100vh; position: relative; }
+    .slide { position: absolute; inset: 0; background: var(--color-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transform: scale(0.95); transition: opacity 0.7s ease, transform 0.7s ease; pointer-events: none; overflow: hidden; }
+    .slide.active { opacity: 1; transform: scale(1); pointer-events: all; }
+    .slide > .content { position: relative; z-index: 2; width: 100%; max-width: 1280px; padding: clamp(0.75rem, 1.6vw, 1.4rem); padding-bottom: 5.5rem; }
+    .nav-controls { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 100; background: var(--color-glass-bg); backdrop-filter: blur(10px); padding: 10px 24px; border-radius: 40px; border: 1px solid var(--color-glass-border); }
+    .nav-btn { width: 40px; height: 40px; border: none; background: var(--color-glass-bg); color: #00ff41; border-radius: 50%; font-size: 1.2rem; cursor: pointer; }
+    .slide-dots { display: flex; gap: 8px; }
+    .dot { width: 10px; height: 10px; border-radius: 999px; background: rgba(255,255,255,0.15); cursor: pointer; }
+    .dot.active { background: #00ff41; transform: scale(1.25); }
+    .slide-counter { font-size: 0.8rem; color: var(--color-text-muted); min-width: 46px; text-align: center; }
+    .reveal { opacity: 0; transform: translateY(20px); }
+    .gradient-mesh { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(90px); animation: float-slow 14s ease-in-out infinite; }
+    .blob:nth-child(2) { animation: float-drift 18s ease-in-out infinite; }
+    @keyframes float-slow { 0% { transform: translate(0,0) scale(1);} 50% { transform: translate(35px,-30px) scale(1.08);} 100% { transform: translate(0,0) scale(1);} }
+    @keyframes float-drift { 0% { transform: translate(0,0) scale(1);} 50% { transform: translate(-30px,25px) scale(0.94);} 100% { transform: translate(0,0) scale(1);} }
+    @keyframes float { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-14px);} }
+    .slide::before { content:''; position:absolute; inset:0; z-index:1; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"); opacity:0.03; }
+    .slide::after { content:''; position:absolute; inset:0; z-index:1; pointer-events:none; background: radial-gradient(ellipse at center, transparent 48%, var(--color-vignette) 100%); }
+    .terminal-card { background: rgba(7, 12, 10, 0.72); border: 1px solid rgba(0,255,65,0.14); box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 0 0 1px rgba(0,255,65,0.03); border-radius: 22px; }
+    .accent-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(0,255,65,0.7), transparent); }
+    .chip { border: 1px solid rgba(0,255,65,0.18); background: rgba(0,255,65,0.06); border-radius: 999px; }
+    .scan-grid { background-image: linear-gradient(rgba(0,255,65,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,65,0.05) 1px, transparent 1px); background-size: 28px 28px; }
+    .icon-box { width: 46px; height: 46px; border-radius: 12px; display:flex; align-items:center; justify-content:center; background: rgba(0,255,65,0.07); border:1px solid rgba(0,255,65,0.18); font-weight:800; font-family: var(--font-display); font-size: 0.85rem; }
+    .pipeline { display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .pipeline .step { position:relative; }
+    .pipeline .step:not(:last-child)::after { content:'→'; position:absolute; right:-14px; top:42%; transform:translateY(-50%); color:#00ff41; opacity:0.55; font-size:1.2rem; }
+    .result-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    .result-table th { text-align: left; padding: 0.65rem 0.8rem; color: #7fa08a; font-family: var(--font-display); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; border-bottom: 1px solid rgba(0,255,65,0.18); }
+    .result-table td { padding: 0.7rem 0.8rem; border-bottom: 1px solid rgba(0,255,65,0.08); color: #b8d2bf; vertical-align: middle; }
+    .result-table tr:last-child td { border-bottom: none; }
+    .result-table .val { color: #e7f5ea; font-weight: 600; }
+    .result-table .sig { color: #34d399; font-weight: 700; }
+    .result-table .ns { color: #f87171; font-weight: 600; }
+    .result-table .hi-bad { color: #f59e0b; font-weight: 800; }
+    .result-table .lo-good { color: #34d399; font-weight: 800; }
+    .result-table .lo-bad { color: #f87171; font-weight: 800; }
+    .result-table .hi-good { color: #34d399; font-weight: 800; }
+    .result-table .non-hi { color: #f59e0b; font-weight: 800; }
+    .result-table .adapt-lo { color: #34d399; font-weight: 700; }
+    .result-table .mid { color: #b8d2bf; font-weight: 600; }
+    .result-table tr.row-proof td { background: rgba(0,255,65,0.04); }
+    .result-table tr.row-mute td { opacity: 0.65; }
+    .tag { display: inline-block; margin-left: 0.35rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.85; }
+    .legend-img { width: 100%; height: auto; border-radius: 14px; display: block; }
+    .slide-kicker { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.28em; color: var(--color-text-muted); margin-bottom: 0.5rem; }
+    .slide-title { font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.35rem); font-weight: 700; color: var(--color-accent-1); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration:0.01ms !important; transition-duration:0.2s !important; } }
+  </style>
+</head>
+<body>
+<div class="mouse-spotlight" style="position:fixed;inset:0;z-index:99;pointer-events:none;"></div>
+<div class="deck">
+
+  <!-- 1. Title -->
+  <div class="slide active" data-slide="1">
+    <div class="gradient-mesh scan-grid">
+      <div class="blob" style="width:460px;height:460px;top:-120px;right:-100px;background:var(--color-accent-1);opacity:.12"></div>
+      <div class="blob" style="width:320px;height:320px;bottom:-100px;left:-80px;background:var(--color-accent-2);opacity:.10"></div>
+      <div class="blob" style="width:220px;height:220px;top:40%;left:18%;background:var(--color-accent-3);opacity:.08"></div>
+    </div>
+    <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1"></canvas>
+    <div class="content text-center">
+      <p class="reveal mb-4 font-display text-sm uppercase tracking-[0.45em] text-text-muted">WP9 Use Case 2 Evaluation</p>
+      <h1 class="reveal font-display text-[clamp(2.1rem,4.6vw,4.2rem)] font-extrabold tracking-tight bg-linear-to-r from-accent-1 via-accent-2 to-accent-1 bg-clip-text text-transparent">CTI Graph Adaptation Study</h1>
+      <p class="reveal mx-auto mt-5 max-w-3xl text-[clamp(1rem,1.5vw,1.3rem)] text-text-secondary">Experiment design, protocol changes, and analysis results — does visual adaptation help people read Cyber Threat Intelligence (CTI) graphs, and do image features track that help?</p>
+      <div class="reveal mt-8 flex flex-wrap items-center justify-center gap-3">
+        <span class="chip px-4 py-2 text-sm text-accent-2">N = 13</span>
+        <span class="chip px-4 py-2 text-sm text-accent-2">624 trials</span>
+        <span class="chip px-4 py-2 text-sm text-accent-2">48 stimuli</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Idea -->
+  <div class="slide" data-slide="2">
+    <div class="gradient-mesh"><div class="blob" style="width:350px;height:350px;top:-70px;right:-70px;background:var(--color-accent-1);opacity:.08"></div><div class="blob" style="width:250px;height:250px;bottom:-60px;left:-50px;background:var(--color-accent-2);opacity:.06"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Idea</p>
+      <h2 class="reveal slide-title">What we set out to do</h2>
+      <div class="accent-line reveal my-5"></div>
+      <div class="grid grid-cols-3 gap-5 mt-2">
+        <div class="terminal-card p-6 reveal">
+          <div class="mb-4 flex items-center gap-3"><div class="icon-box">01</div><h3 class="font-display text-xl">Paradigm</h3></div>
+          <p class="text-base leading-relaxed text-text-secondary">Graph question-answering task analogous to deliverable <span class="text-accent-2 font-semibold">D2.2</span>, using Sphynx CTI / GoTrimm material, redesigned for inter-subject correlation (<span class="text-accent-2 font-semibold">ISC</span>) analysis.</p>
+        </div>
+        <div class="terminal-card p-6 reveal">
+          <div class="mb-4 flex items-center gap-3"><div class="icon-box">02</div><h3 class="font-display text-xl">Focus</h3></div>
+          <p class="text-base leading-relaxed text-text-secondary">Primary contrast: <span class="text-accent-2 font-semibold">adaptation</span> (non / semi / full). Graph size and question level are secondary context.</p>
+        </div>
+        <div class="terminal-card p-6 reveal">
+          <div class="mb-4 flex items-center gap-3"><div class="icon-box">03</div><h3 class="font-display text-xl">Questions</h3></div>
+          <p class="text-base leading-relaxed text-text-secondary">Does adaptation ease the task? Do sensors show shared dynamics? Can image features act as <span class="text-accent-2 font-semibold">proxies</span> for human data?</p>
+        </div>
+      </div>
+      <div class="terminal-card p-5 reveal mt-5">
+        <p class="text-base leading-relaxed text-text-secondary"><span class="text-accent-1 font-semibold">ISC constraint:</span> fixed identical timing across participants (no self-pacing) — required so shared stimulus-locked dynamics can be compared (Nastase et al., 2019).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Design changes -->
+  <div class="slide" data-slide="3">
+    <div class="gradient-mesh"><div class="blob" style="width:280px;height:280px;top:12%;left:-60px;background:var(--color-accent-3);opacity:.07"></div><div class="blob" style="width:330px;height:330px;bottom:-80px;right:-40px;background:var(--color-accent-1);opacity:.07"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Design</p>
+      <h2 class="reveal slide-title">What changed from the partner material</h2>
+      <div class="accent-line reveal my-3"></div>
+      <div class="grid grid-cols-[1.05fr_0.95fr] gap-5">
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="terminal-card p-5 reveal">
+              <h3 class="font-display text-lg text-accent-3 mb-2">Why redesign</h3>
+              <ul class="space-y-1.5 text-sm text-text-secondary list-none">
+                <li>• Low-res / inconsistent screenshots</li>
+                <li>• Incomplete or incorrect adaptations</li>
+                <li>• Unrealistic Security Operations Centre (SOC) samples</li>
+                <li>• Original features not usable on those images</li>
+              </ul>
+            </div>
+            <div class="terminal-card p-5 reveal">
+              <h3 class="font-display text-lg text-accent-2 mb-2">Final protocol</h3>
+              <ul class="space-y-1.5 text-sm text-text-secondary list-none">
+                <li>• Graphs rebuilt; 6 &amp; 12 nodes kept</li>
+                <li>• Node types 5 → 3; Traffic Light Protocol (TLP) as colour</li>
+                <li>• Graph viewing <span class="text-accent-2 font-semibold">18 s</span></li>
+                <li>• Fixed breaks between trials; long break after ~20 minutes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="terminal-card p-3 reveal text-center"><p class="font-display text-[0.65rem] uppercase tracking-widest text-text-muted mb-1">Non-adapted</p><p class="text-xs text-text-secondary">Text only — no visual encoding</p></div>
+            <div class="terminal-card p-3 reveal text-center"><p class="font-display text-[0.65rem] uppercase tracking-widest text-text-muted mb-1">Semi-adapted</p><p class="text-xs text-text-secondary">One encoding applied</p></div>
+            <div class="terminal-card p-3 reveal text-center"><p class="font-display text-[0.65rem] uppercase tracking-widest text-text-muted mb-1">Fully adapted</p><p class="text-xs text-text-secondary">All encodings applied</p></div>
+          </div>
+        </div>
+        <div class="terminal-card p-3 reveal">
+          <p class="font-display text-xs uppercase tracking-widest text-text-muted mb-2 px-1">Adaptation encodings</p>
+          <img class="legend-img" src="cti_experiment_legend_2x2_dark.png" alt="Visual keys: colour→TLP, shape→type, size→value, width→connection">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Analysis flow -->
+  <div class="slide" data-slide="4">
+    <div class="gradient-mesh"><div class="blob" style="width:420px;height:420px;top:-120px;right:-100px;background:var(--color-accent-2);opacity:.07"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Analysis</p>
+      <h2 class="reveal slide-title">Four-step analysis flow</h2>
+      <div class="pipeline mt-8">
+        <div class="terminal-card p-5 step reveal">
+          <p class="font-display text-lg text-accent-2">1 · Behaviour</p>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">Response time (RT) &amp; accuracy across adaptation (linear mixed model / MixedLM; clustered logit).</p>
+        </div>
+        <div class="terminal-card p-5 step reveal">
+          <p class="font-display text-lg text-accent-2">2 · ISC</p>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">Electroencephalography (EEG), eye-tracking, photoplethysmography (PPG), electrodermal activity (EDA).</p>
+        </div>
+        <div class="terminal-card p-5 step reveal">
+          <p class="font-display text-lg text-accent-2">3 · Image features</p>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">Digital ink, utility, synthetic saliency (SUM, ViSalFormer), synthetic scanpath (CLIPGaze).</p>
+        </div>
+        <div class="terminal-card p-5 step reveal">
+          <p class="font-display text-lg text-accent-2">4 · Proxy check</p>
+          <p class="mt-3 text-sm leading-relaxed text-text-secondary">Do image features track human RT / accuracy / ISC patterns?</p>
+        </div>
+      </div>
+      <div class="terminal-card p-5 reveal mt-7">
+        <p class="text-base leading-relaxed text-text-secondary"><span class="text-accent-1 font-semibold">Data collected:</span> behaviour · eye-tracking (GazePoint) · EEG · PPG · EDA. Same adaptation conditions throughout.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Behaviour results -->
+  <div class="slide" data-slide="5">
+    <div class="gradient-mesh"><div class="blob" style="width:360px;height:360px;top:-100px;right:-80px;background:var(--color-accent-1);opacity:.07"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Results · Behaviour</p>
+      <h2 class="reveal slide-title">Adaptation makes the task easier</h2>
+      <div class="grid grid-cols-[1fr_1.15fr] gap-5 mt-6">
+        <div class="terminal-card p-5 reveal overflow-hidden">
+          <table class="result-table">
+            <thead>
+              <tr><th>Adaptation</th><th>Median RT</th><th>Accuracy</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="val">Non-adapted</td>
+                <td class="hi-bad">9.53 s<span class="tag">slower</span></td>
+                <td class="lo-bad">71%<span class="tag">lower</span></td>
+              </tr>
+              <tr>
+                <td class="val">Semi-adapted</td>
+                <td class="lo-good">7.70 s</td>
+                <td class="hi-good">78%</td>
+              </tr>
+              <tr>
+                <td class="val">Fully adapted</td>
+                <td class="lo-good">7.19 s<span class="tag">faster</span></td>
+                <td class="hi-good">80%<span class="tag">higher</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-3 text-xs text-text-muted">Amber / red = worse · green = better (vs non-adapted)</p>
+        </div>
+        <div class="terminal-card p-5 reveal overflow-hidden">
+          <table class="result-table">
+            <thead>
+              <tr><th>Finding</th><th>Sig?</th><th>Test</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Full / semi vs non: faster RT</td><td class="sig">Yes</td><td>MixedLM</td></tr>
+              <tr><td>Full / semi vs non: higher accuracy</td><td class="sig">Yes</td><td>Clustered logit</td></tr>
+              <tr><td>Harder questions (Q2) &amp; 12-node harder</td><td class="sig">Yes</td><td>Same models</td></tr>
+              <tr><td>Semi helps easy (Q1) RT, not Q2 RT</td><td class="sig">Yes</td><td>Interaction</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="terminal-card p-4 reveal mt-4">
+        <p class="text-base text-text-secondary"><span class="text-accent-2 font-semibold">Takeaway:</span> adaptation helps — faster and more accurate — when it matches the question context. Semi alone is not enough for hard (Q2) questions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. ISC results -->
+  <div class="slide" data-slide="6">
+    <div class="gradient-mesh"><div class="blob" style="width:300px;height:300px;bottom:-40px;left:-40px;background:var(--color-accent-2);opacity:.07"></div><div class="blob" style="width:280px;height:280px;top:-60px;right:-40px;background:var(--color-accent-3);opacity:.06"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Results · ISC</p>
+      <h2 class="reveal slide-title">Shared dynamics track difficulty</h2>
+      <div class="terminal-card p-5 reveal mt-5 overflow-hidden">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Sensor</th>
+              <th>Pattern</th>
+              <th>Sig?</th>
+              <th>Mean ISC <span style="text-transform:none;letter-spacing:0.02em;opacity:.75">(non · semi · full)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-proof">
+              <td class="val">EEG global field power (GFP)</td>
+              <td><span class="non-hi">Non</span> &gt; full &amp; semi</td>
+              <td class="sig">Yes</td>
+              <td><span class="non-hi">0.41</span> · <span class="adapt-lo">0.11</span> · <span class="adapt-lo">0.23</span></td>
+            </tr>
+            <tr class="row-proof">
+              <td class="val">Gaze Y</td>
+              <td><span class="non-hi">Non</span> &gt; semi &amp; full</td>
+              <td class="sig">Yes</td>
+              <td><span class="non-hi">0.73</span> · <span class="adapt-lo">0.53</span> · <span class="adapt-lo">0.56</span></td>
+            </tr>
+            <tr class="row-proof">
+              <td class="val">Gaze X</td>
+              <td><span class="non-hi">Non</span> &gt; full only</td>
+              <td class="sig">Yes</td>
+              <td><span class="non-hi">0.23</span> · <span class="mid">0.19</span> · <span class="adapt-lo">−0.04</span></td>
+            </tr>
+            <tr class="row-proof">
+              <td class="val">EDA</td>
+              <td><span class="non-hi">Non / semi</span> &gt; full</td>
+              <td class="sig">Yes</td>
+              <td><span class="non-hi">0.42</span> · <span class="non-hi">0.52</span> · <span class="adapt-lo">0.01</span></td>
+            </tr>
+            <tr class="row-mute">
+              <td class="val">Pupil / PPG</td>
+              <td>No adaptation contrast</td>
+              <td class="ns">No</td>
+              <td class="mid">—</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3 text-xs text-text-muted"><span class="non-hi">Amber</span> = higher shared ISC without full adaptation · <span class="adapt-lo">green</span> = lower when adapted · contrasts false discovery rate (FDR) corrected</p>
+      </div>
+      <div class="terminal-card p-4 reveal mt-4">
+        <p class="text-base text-text-secondary"><span class="text-accent-2 font-semibold">Takeaway:</span> without adaptation, people share more EEG / gaze / EDA dynamics — consistent with a harder task. Secondary: larger graphs raise GFP ISC.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Features + alignment -->
+  <div class="slide" data-slide="7">
+    <div class="gradient-mesh"><div class="blob" style="width:360px;height:360px;top:-80px;right:-60px;background:var(--color-accent-1);opacity:.07"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Results · Image features vs humans</p>
+      <h2 class="reveal slide-title">Most features miss adaptation — and none proxy humans</h2>
+      <div class="terminal-card p-4 reveal mt-4" style="border-color: rgba(245,158,11,0.28);">
+        <p class="text-base leading-relaxed text-text-secondary"><span class="text-accent-3 font-semibold">Adaptation focus:</span> except <span class="text-accent-2 font-semibold">digital ink</span> (non vs full, FDR ≈ .031), image features <span class="text-accent-3 font-semibold">do not</span> significantly distinguish the main adaptation conditions after FDR. Utility / SUM / CLIPGaze may split by graph size or question — not by adaptation. ViSalFormer has no FDR-significant condition splits.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-5 mt-4">
+        <div class="terminal-card p-5 reveal overflow-hidden">
+          <p class="font-display text-sm uppercase tracking-widest text-text-muted mb-3">Splits adaptation?</p>
+          <table class="result-table">
+            <thead><tr><th>Image feature</th><th>Adaptation</th><th>Other splits</th></tr></thead>
+            <tbody>
+              <tr class="row-proof"><td class="val">Digital ink</td><td class="sig">Yes</td><td class="mid">also graph size</td></tr>
+              <tr><td class="val">Utility</td><td class="ns">No</td><td class="mid">graph size</td></tr>
+              <tr><td class="val">Synthetic saliency (SUM)</td><td class="ns">No</td><td class="mid">graph size</td></tr>
+              <tr><td class="val">Synthetic saliency (ViSalFormer)</td><td class="ns">No</td><td class="ns">none</td></tr>
+              <tr><td class="val">Synthetic scanpath (CLIPGaze)</td><td class="ns">No</td><td class="mid">question</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="terminal-card p-5 reveal overflow-hidden">
+          <p class="font-display text-sm uppercase tracking-widest text-text-muted mb-3">Human proxy?</p>
+          <table class="result-table">
+            <thead><tr><th>Claim</th><th>Sig?</th></tr></thead>
+            <tbody>
+              <tr><td>Δfeature ↔ ΔRT / accuracy</td><td class="ns">No</td></tr>
+              <tr><td>Tracks GFP / gaze Y pattern</td><td class="ns">No</td></tr>
+              <tr><td>CLIPGaze ↔ real eye-tracking</td><td class="ns">No</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-sm leading-relaxed text-text-secondary">If they barely separate adaptation, they <span class="text-accent-3 font-semibold">cannot</span> stand in for the human adaptation benefit we care about.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Verdict -->
+  <div class="slide" data-slide="8">
+    <div class="gradient-mesh scan-grid"><div class="blob" style="width:400px;height:400px;top:-100px;right:-80px;background:var(--color-accent-1);opacity:.10"></div><div class="blob" style="width:280px;height:280px;bottom:-60px;left:-40px;background:var(--color-accent-2);opacity:.08"></div></div>
+    <div class="content">
+      <p class="reveal mb-2 font-display uppercase tracking-[0.28em] text-text-muted">Verdict</p>
+      <h2 class="reveal slide-title">Three bullets to remember</h2>
+      <div class="accent-line reveal my-5"></div>
+      <div class="space-y-4">
+        <div class="terminal-card p-6 reveal flex gap-4 items-start">
+          <div class="icon-box shrink-0">1</div>
+          <div>
+            <h3 class="font-display text-xl text-accent-2 mb-1">Humans: adaptation helps</h3>
+            <p class="text-base text-text-secondary">Significant faster RT and higher accuracy for semi/full vs non (MixedLM / clustered logit). Same direction as D2.2 when adaptation matches the question.</p>
+          </div>
+        </div>
+        <div class="terminal-card p-6 reveal flex gap-4 items-start">
+          <div class="icon-box shrink-0">2</div>
+          <div>
+            <h3 class="font-display text-xl text-accent-2 mb-1">Sensors: harder → more shared ISC</h3>
+            <p class="text-base text-text-secondary">Non-adapted yields significantly higher GFP, gaze Y, and EDA ISC than full adaptation — more shared processing when encoding help is absent.</p>
+          </div>
+        </div>
+        <div class="terminal-card p-6 reveal flex gap-4 items-start">
+          <div class="icon-box shrink-0">3</div>
+          <div>
+            <h3 class="font-display text-xl text-accent-2 mb-1">Image features: not a stand-in for humans</h3>
+            <p class="text-base text-text-secondary">Aside from digital ink, they mostly <span class="text-accent-3 font-semibold">do not</span> separate adaptation conditions — and they are <span class="text-accent-3 font-semibold">not</span> significant proxies for the human RT/accuracy benefit under paired FDR tests.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Close / talk map -->
+  <div class="slide" data-slide="9">
+    <div class="gradient-mesh"><div class="blob" style="width:320px;height:320px;top:20%;left:10%;background:var(--color-accent-3);opacity:.06"></div><div class="blob" style="width:360px;height:360px;bottom:-80px;right:-60px;background:var(--color-accent-1);opacity:.08"></div></div>
+    <div class="content text-center">
+      <p class="reveal mb-3 font-display text-sm uppercase tracking-[0.4em] text-text-muted">End of briefing</p>
+      <h2 class="reveal font-display text-4xl font-bold text-accent-1">Questions?</h2>
+      <p class="reveal mx-auto mt-4 max-w-2xl text-lg text-text-secondary">Full numbers, tests, and justifications live in the analysis package.</p>
+      <div class="reveal mt-8 grid grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
+        <div class="terminal-card p-5">
+          <p class="font-display text-xs uppercase tracking-widest text-text-muted mb-2">Results brief</p>
+          <p class="text-sm text-text-secondary">D9_4_WP9_UC2_REPORT_SUMMARY.md</p>
+        </div>
+        <div class="terminal-card p-5">
+          <p class="font-display text-xs uppercase tracking-widest text-text-muted mb-2">Methods / why</p>
+          <p class="text-sm text-text-secondary">ANALYSIS_STEPS_METHODS.md</p>
+        </div>
+      </div>
+      <p class="reveal mt-8 text-sm text-text-muted">Arrow keys / space · click dots to jump</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="nav-controls">
+  <button class="nav-btn" onclick="changeSlide(-1)" aria-label="Previous">‹</button>
+  <div class="slide-dots" id="dots"></div>
+  <span class="slide-counter" id="counter">1 / 9</span>
+  <button class="nav-btn" onclick="changeSlide(1)" aria-label="Next">›</button>
+</div>
+
+<script>
+let current = 1;
+const total = document.querySelectorAll('.slide').length;
+const dotsContainer = document.getElementById('dots');
+const counter = document.getElementById('counter');
+for (let i = 1; i <= total; i++) {
+  const dot = document.createElement('div');
+  dot.className = 'dot' + (i === 1 ? ' active' : '');
+  dot.onclick = () => goToSlide(i);
+  dotsContainer.appendChild(dot);
+}
+function goToSlide(n) {
+  const prev = document.querySelector('.slide.active');
+  const next = document.querySelector(`.slide[data-slide="${n}"]`);
+  if (prev) prev.classList.remove('active');
+  if (next) { next.classList.add('active'); animateSlide(next); }
+  current = n;
+  updateNav();
+}
+function changeSlide(dir) {
+  let next = current + dir;
+  if (next < 1) next = total;
+  if (next > total) next = 1;
+  goToSlide(next);
+}
+function updateNav() {
+  document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i + 1 === current));
+  counter.textContent = current + ' / ' + total;
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); changeSlide(1); }
+  if (e.key === 'ArrowLeft') { e.preventDefault(); changeSlide(-1); }
+});
+let touchStartX = 0;
+document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', (e) => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) changeSlide(diff > 0 ? 1 : -1);
+});
+function animateSlide(slide) {
+  slide.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transition = 'none';
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.offsetHeight;
+    const delay = i * 0.08;
+    el.style.transition = `opacity 0.35s ease ${delay}s, transform 0.35s ease ${delay}s`;
+    el.style.opacity = '1';
+    el.style.transform = 'translateY(0px)';
+  });
+}
+document.addEventListener('mousemove', (e) => {
+  const spotlight = document.querySelector('.mouse-spotlight');
+  if (spotlight) spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(0,255,65,0.06), transparent 40%)`;
+});
+window.initParticles = function(canvas, options) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+  const interactive = options.interactive !== false;
+  const count = options.count || (interactive ? 55 : 18);
+  let mx = -1000, my = -1000;
+  const particles = Array.from({ length: count }, () => ({
+    x: Math.random()*canvas.width, y: Math.random()*canvas.height,
+    vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3,
+    size:Math.random()*2.5+0.8, alpha:Math.random()*0.35+0.1
+  }));
+  if (interactive) {
+    canvas.addEventListener('mousemove', (e)=>{ const rect = canvas.getBoundingClientRect(); mx = e.clientX-rect.left; my = e.clientY-rect.top; });
+    canvas.addEventListener('mouseleave', ()=>{ mx=-1000; my=-1000; });
+  }
+  (function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    particles.forEach(p => {
+      if (interactive) {
+        const dx = p.x-mx, dy = p.y-my, dist = Math.sqrt(dx*dx+dy*dy);
+        if (dist < 120 && dist > 0) {
+          const force = (120-dist)/120*2;
+          p.vx += (dx/dist)*force*0.1; p.vy += (dy/dist)*force*0.1;
+        }
+      }
+      p.vx*=0.98; p.vy*=0.98; p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
+      if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+      ctx.fillStyle = `rgba(0,255,65,${p.alpha})`; ctx.fill();
+    });
+    requestAnimationFrame(animate);
+  })();
+};
+document.querySelectorAll('.particle-canvas').forEach(c => window.initParticles(c, { interactive: true, count: 55 }));
+try { animateSlide(document.querySelector('.slide.active')); } catch(e) {}
+</script>
+</body>
+</html>
