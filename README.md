@@ -1,6 +1,6 @@
 # WP9 Use Case 2 — Experiment & Analysis
 
-This repository contains the experiment design and post-experiment analysis for **WP9 Use Case 2**, supporting deliverable **D9.4**.
+This repository contains the experiment design and post-experiment analysis for **WP9 Use Case 2**, supporting deliverable **D9.4** of project **Symbtiotik**.
 
 ---
 
