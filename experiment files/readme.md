@@ -68,7 +68,7 @@ Each trial followed this sequence:
 
 ### ISC compatibility constraints
 
-Following Nastase et al. (2019) and discussion with ISC expert Djavad:
+Following Nastase et al. (2019) and discussion with ISC expert:
 
 - The experiment is **not self-paced**: all timing is fixed and identical across participants, as required by ISC assumptions.
 - Trials are presented in a **grouped random order** (identical for all participants) to allow epoch-wise ISC while controlling for sequence effects.
@@ -135,7 +135,7 @@ The final experiment was run with **13 participants**. Data collected per partic
 | Reduce node types 5→3 | Pilot participants could not memorise 5 types reliably | Pilot results |
 | TLP encoded as colour | Aligns encoding with the variable's colour-based name; eliminates confusion | Pilot results |
 | Fixed breaks every ~20 min | Fatigue degrades cognitive performance after ~20 min | Hopstaken et al. (2015) |
-| No answer confirmation | Avoids timing variability that would violate ISC assumptions | Expert advice (Djavad) |
+| No answer confirmation | Avoids timing variability that would violate ISC assumptions | Expert advice |
 
 ---
 
