@@ -48,7 +48,7 @@ The flow of the analysis is as follows:
 
 **Detail files:** `results/multimodal/mixed_model_coefficients.csv`, `mixed_effects_report.txt`, `effect_sizes.csv` · `results/behaviour/`
 
-**Summary:** Semi and fully adapted conditions have **statistically significant** lower response times and higher accuracy than non-adapted, so **adaptation helps participants perform the task** (faster and more correct); Q2 and 12-node graphs remain harder, and semi-adaptation alone is not enough for Q2 RT. Results follow the same direction as **D2.2**, with the intuition that visual adaptation **helps** the participant solve the task. Important not here: This is in effect **when the adaptation matched the question context**. (as the experiment mimics D2.2 in design, it **does not test** random adaptation effects)
+**Summary:** Semi and fully adapted conditions have **statistically significant** lower response times and higher accuracy than non-adapted, so **adaptation helps participants perform the task** (faster and more correct); Q2 and 12-node graphs remain harder, and semi-adaptation alone is not enough for Q2 RT. Results follow the same direction as **D2.2**, with the intuition that visual adaptation **helps** the participant solve the task. Important note here: This is in effect **when the adaptation matched the question context**. (as the experiment mimics D2.2 in design, it **does not test** random adaptation effects)
 
 ---
 
