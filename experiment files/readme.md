@@ -78,8 +78,8 @@ Following Nastase et al. (2019) and discussion with ISC expert Djavad:
 
 Based on evidence that cognitive fatigue affects task performance after ~20 minutes (Hopstaken et al., 2015 — [doi:10.1111/psyp.14126](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.14126)):
 
-- **Fixed breaks** of 3–5 minutes were introduced approximately every 20 minutes of active task time.
-- The number of conditions and trials per condition pair was set to keep total active duration reasonable while maintaining sufficient data for ISC (10 trials per condition pair).
+- **Fixed breaks** of 3 minutes were introduced approximately every 20 minutes of active task time.
+- The number of conditions and trials per condition pair was set to keep total active duration reasonable while maintaining sufficient data for ISC (4 trials per condition pair).
 
 ---
 
